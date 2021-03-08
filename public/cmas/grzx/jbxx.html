@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/grzx.css">
+		<link rel="stylesheet" href="/picss/pic.css">
+	</head>
+	<style>
+		*:focus { 
+         /* outline: none; */
+		  border-bottom: 1px solid #00008B;
+		  border-color: #00009E !important;
+     }
+	 .layui-form-radio>i:hover, .layui-form-radioed>i{
+		 color: rgba(0, 0, 0, 1) !important;
+	 }
+	 .layui-form-label{
+		 text-align: left !important;
+		 color: #141718 !important;
+		 font-weight: 500 !important;
+	 }
+	 .layui-form-select dl dd.layui-this{
+		 background: red !important;
+	 }
+	</style>
+	<!--基本信息 -->
+	<body>
+		<script src="../picJs/PersonalCenter.js" type="text/javascript" charset="utf-8"></script>
+		<div class="grzx_main">
+			<script src="../picJs/PersonalCenter_side.js" type="text/javascript" charset="utf-8"></script>
+			<div class="grzx_mainList">
+				<div class="grzx_mainListD">
+					基本信息
+					<div class="tab_title">
+						<ul>
+							<li class="default">个人信息</li>
+							<li>更换头像</li>
+							<li>兴趣标签</li>
+						</ul>
+					</div>
+					<div class="tab_subject">
+						<div class="div">
+							<form class="layui-form" action="">
+								<div class="layui-form-item">
+									<label class="layui-form-label">真实姓名</label>
+									<div class="layui-input-block">
+										<input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">验证手机</label>
+										<div class="layui-input-inline">
+											<input type="tel" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">验证邮箱</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item" pane="">
+									<label class="layui-form-label">性别</label>
+									<div class="layui-input-block">
+										<input type="radio" name="sex" value="男" title="男" checked="">
+										<input type="radio" name="sex" value="女" title="女">
+									</div>
+								</div>
+								<div class="layui-form-item" pane="">
+
+									<div class="layui-inline">
+										<label class="layui-form-label">生日</label>
+										<div class="layui-input-inline">
+											<input type="text" name="birthday" id="birthday" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off"
+											 class="layui-input">
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item" pane="">
+									<div class="layui-inline">
+										<label class="layui-form-label">年龄段</label>
+										<div class="layui-input-inline">
+											<select name="age" lay-verify="required" lay-search="">
+												<option value="">年龄段</option>
+												<option value="20-25">20-25</option>
+												<option value="25-35">25-35</option>
+												<option value="35-45">35-45</option>
+												<option value="45以上">45以上</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item" pane="">
+									<div class="layui-inline">
+										<label class="layui-form-label">职位</label>
+										<div class="layui-input-inline">
+											<select name="occupation" lay-verify="position" lay-search="">
+												<option value="">职位</option>
+												<option value="ceo">ceo</option>
+												<option value="cfo">cfo</option>
+												<option value="cto">cto</option>
+												<option value="职场新人">职场新人</option>
+												<option value="学生">学生</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-input-block">
+										<button class="layui-btn" lay-submit="" style="width: 416px; background: #f3414d;" lay-filter="demo1">立即提交</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="div">更换头像</div>
+						<div class="div">兴趣标签</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script src="/picJs/footer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="../layui/css/layui.css">
+<script type="text/javascript">
+	function getCookie(name) {
+		var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+		if (arr = document.cookie.match(reg)) return unescape(arr[2]);
+		else return null;
+	}
+	var token = getCookie("token");
+	console.log(token);
+	layui.use(['form', 'layedit', 'laydate'], function() {
+		var form = layui.form,
+			layer = layui.layer,
+			layedit = layui.layedit,
+			laydate = layui.laydate;
+
+		//日期
+		laydate.render({
+			elem: '#birthday',
+			value: new Date()
+		});
+		laydate.render({
+			elem: '#date1'
+		});
+
+		//创建一个编辑器
+		var editIndex = layedit.build('LAY_demo_editor');
+
+		//自定义验证规则
+		form.verify({
+			title: function(value) {
+				if (value.length < 5) {
+					return '标题至少得5个字符啊';
+				}
+			},
+			pass: [
+				/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'
+			],
+			content: function(value) {
+				layedit.sync(editIndex);
+			}
+		});
+
+		//监听指定开关
+		form.on('switch(switchTest)', function(data) {
+			layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+				offset: '6px'
+			});
+			layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+		});
+
+		//监听提交
+		form.on('submit(demo1)', function(data) {
+			console.log(JSON.stringify(data.field))
+			var occupation = $('。')
+			// data.field.Consignee
+			$.ajax({
+				type: "POSt",
+				url: "http://www.ynresearch.net/basicInfo",
+				headers: {
+					'token': token
+				},
+				data: JSON.stringify(data.field),
+				success: function(data) {
+					console.log(data);
+					if (data.bol == true) {
+						alert("完善成功")
+					}
+
+				},
+				error: function() {
+					console.log("错误！！！")
+
+				}
+			});
+			// layer.alert(JSON.stringify(data.field), {
+			// 	title: '最终的提交信息'
+			// })
+			return false;
+		});
+
+		//表单初始赋值
+		form.val('example', {
+			"username": "贤心", // "name": "value"
+			"password": "123456",
+			"interest": 1,
+			"like[write]": true, //复选框选中状态
+			"close": true, //开关状态
+			"sex": "女",
+			"desc": "我爱 layui"
+		})
+	});
+	$(".tab_title li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_subject>.div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("default").siblings().removeClass("default");
+	});
+	$(".tab_ment li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_box>.div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("change").siblings().removeClass("change");
+	});
+	layui.use('upload', function() {
+		var $ = layui.jquery,
+			upload = layui.upload;
+
+		//普通图片上传
+		var uploadInst = upload.render({
+			elem: '#test1',
+			url: '/upload/',
+			before: function(obj) {
+				//预读本地文件示例，不支持ie8
+				obj.preview(function(index, file, result) {
+					$('#demo1').attr('src', result); //图片链接（base64）
+				});
+			},
+			done: function(res) {
+				//如果上传失败
+				if (res.code > 0) {
+					return layer.msg('上传失败');
+				}
+				//上传成功
+			},
+			error: function() {
+				//演示失败状态，并实现重传
+				var demoText = $('#demoText');
+				demoText.html(
+					'<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+				demoText.find('.demo-reload').on('click', function() {
+					uploadInst.upload();
+				});
+			}
+		});
+	});
+</script>

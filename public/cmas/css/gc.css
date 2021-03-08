@@ -1,0 +1,79 @@
+/* 观察 */
+
+
+section {
+	width: 1152px;
+	margin: 0 auto;
+	/* background: red; */
+}
+
+.sectionR_two:nth-child(1) .sectionR_twoUL {
+	padding-bottom: 10px;
+}
+
+.sectionR_two:nth-child(3) .sectionR_twoUL {
+	padding-bottom: 24px;
+}
+
+.sectionR_two .ul li:nth-last-child(1) {
+	padding-bottom: 14px !important;
+}
+
+/* 热搜词 */
+.sectionR_one {
+	padding-top: 7px;
+	padding-top: 7px;
+	width: 100%;
+	margin-bottom: 30px;
+	height: 292px !important;
+
+}
+
+.sectionR_oneA {
+	border-bottom: 1px dashed rgba(0, 0, 0, 1);
+	border-top: 1px dashed rgba(0, 0, 0, 1);
+	padding-top: 33px;
+	padding-bottom: 33px;
+	margin-top: 29px;
+}
+
+.sectionR_oneA a {
+	display: block;
+	padding-left: 11px;
+	padding-right: 11px;
+	height: 27px;
+	line-height: 27px;
+	border: 1px solid rgba(34, 34, 34, 1);
+	border-radius: 14px;
+	float: left;
+	margin-bottom: 12px;
+	margin-right: 8px;
+	font-weight: 400;
+	color: rgba(34, 34, 34, 1);
+	margin-left: 8px;
+}
+/* 列表  理论  业界  单独样式 */
+.ckgd {
+    /* margin-top: 0px !important; */
+    margin-right: 28px;
+}
+ .sectionR_two .ul {
+	 padding-bottom: 26px !important;
+ }
+ .sectionR_two .ul li:nth-child(3) {
+     /* border-bottom: none;   */
+ }
+/* 移动端 */
+@media screen and (max-width: 1024px) {
+	.sectionR_two:nth-last-child(1) .sectionR_twoUL{
+	padding-bottom: 26px;
+	}
+	.sectionR_two:nth-last-child(1) .ckgd{
+		margin-right: 25px;
+		margin-bottom: 15px;
+		
+	}
+	.sectionR_two .tg{
+		margin-top: 50px;
+	}
+}

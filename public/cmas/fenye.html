@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<style>
+* {
+font-size:10.2pt;
+font-family:tahoma;
+line-height:150%;
+}
+.divContent
+{
+border:1px solid red;
+background-color:#FFD2D3;
+width:500px;
+word-break:break-all;
+margin:10px 0px 10px;
+padding:10px;
+}
+</style>
+</HEAD>
+<BODY>
+header
+<div id="divPagenation"></div>
+<div id="divContent"></div>
+footer
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+s="<p class="Article"><span style="text-indent:2em;">对于多元化地产企业来说，通过编制预算的方式，能将公司管理层决策和年度发展目标结合起来，对下属众多项目公司的资源进行合理分配，将参与的所有人员、所有环节纳入预算的管控范围中。但在现实中，多元化地产公司由于业务范围广、项目多，集团公司编制预算过程复杂、耗费时间多，预算的精确度难以满足企业精细化运营的要求，开发一套适合公司业务特点的预算管理系统十分必要。</span></p><p class="Article">M地产公司（以下简称M公司）是一家多元化经营的商业地产开发运营平台，旗下设有地产、商业投资、物业、影院等业务板块。在实施全面预算管理信息化建设之前，M公司已有五年手工编制预算的历史，预算管理制度较为成熟，形成了涉及地产、物业、商业等业务的预算编制表样，但在全面预算管理认识、编制、分析和控制等方面仍存在局限性。</p><p class="Article">针对公司全面预算管理的现状和问题，M公司管理层决定进行全面预算管理系统建设。北京元年科技股份有限公司十多年来一直致力于中国本土企业预算管理系统的实施，特别在房地产领域具有丰富的经验和独特的优势，是M公司首选的系统实施商。</p><p class="Article">在元年的协助下，M公司从以下方面着手加强全面预算管理信息系统的建设。</p>
+				
+function DHTMLpagenation(content) { with (this)
+{
+ // client static html file pagenation
+ // Scipit by blueDestiny
+
+ this.content=content;
+ this.contentLength=content.length;
+ this.pageSizeCount;
+ this.perpageLength=100; //default perpage byte length.
+ this.currentPage=1;
+ //this.regularExp=/.+[\?\&]{1}page=(\d+)/;
+ this.regularExp=/\d+/;
+
+ this.divDisplayContent;
+ this.contentStyle=null;
+ this.strDisplayContent="";
+ this.divDisplayPagenation;
+ this.strDisplayPagenation="";
+ 
+ arguments.length==2?perpageLength=arguments[1]:'';
+
+ try {
+  divExecuteTime=document.createElement("DIV");
+  document.body.appendChild(divExecuteTime);
+ }
+ catch(e)
+ {
+ }
+
+ if(document.getElementById("divPagenation"))
+ {
+  divDisplayPagenation=document.getElementById("divPagenation");
+ }
+ else
+ {
+  try
+  {
+   divDisplayPagenation=document.createElement("DIV");
+   divDisplayPagenation.id="divPagenation";
+   document.body.appendChild(divDisplayPagenation);
+  }
+  catch(e)
+  {
+   return false;
+  }
+ }
+ if(document.getElementById("divContent"))
+ {
+  divDisplayContent=document.getElementById("divContent");
+ }
+ else
+ {
+  try
+  {
+   divDisplayContent=document.createElement("DIV");
+   divDisplayContent.id="divContent";
+   document.body.appendChild(divDisplayContent);
+  }
+  catch(e)
+  {
+   return false;
+  }
+ }
+
+ DHTMLpagenation.initialize();
+ return this;
+ 
+}};
+DHTMLpagenation.initialize=function() { with (this)
+{
+ divDisplayContent.className=contentStyle!=null?contentStyle:"divContent";
+ if(contentLength<=perpageLength)
+ {
+  strDisplayContent=content;
+  divDisplayContent.innerHTML=strDisplayContent;
+  return null;
+ }
+
+ pageSizeCount=Math.ceil((contentLength/perpageLength));
+
+ DHTMLpagenation.goto(currentPage);
+ DHTMLpagenation.displayContent();
+}};
+DHTMLpagenation.displayPage=function() { with (this)
+{
+ strDisplayPagenation="分页：";
+
+ if(currentPage&&currentPage!=1)
+  strDisplayPagenation+='<a href="javascript:void(0)" οnclick="DHTMLpagenation.previous()">上一页</a>&nbsp;&nbsp;';
+ else
+  strDisplayPagenation+="上一页&nbsp;&nbsp;";
+
+ for(var i=1;i<=pageSizeCount;i++)
+ {
+  if(i!=currentPage)
+   strDisplayPagenation+='<a href="javascript:void(0)" οnclick="DHTMLpagenation.goto('+i+');">'+i+'</a>&nbsp;&nbsp;';
+  else
+   strDisplayPagenation+=i+"&nbsp;&nbsp;";
+ }
+
+ if(currentPage&&currentPage!=pageSizeCount)
+  strDisplayPagenation+='<a href="javascript:void(0)" οnclick="DHTMLpagenation.next()">下一页</a>&nbsp;&nbsp;';
+ else
+  strDisplayPagenation+="下一页&nbsp;&nbsp;";
+
+ strDisplayPagenation+="共 " + pageSizeCount + " 页，每页" + perpageLength + " 字符，调整字符数：<input type='text' value='"+perpageLength+"' id='ctlPerpageLength'><input type='button' value='确定' οnclick='DHTMLpagenation.change(document.getElementById(\"ctlPerpageLength\").value);'>";
+
+ divDisplayPagenation.innerHTML=strDisplayPagenation;
+}};
+DHTMLpagenation.previous=function() { with(this)
+{
+ DHTMLpagenation.goto(currentPage-1);
+}};
+DHTMLpagenation.next=function() { with(this)
+{
+ DHTMLpagenation.goto(currentPage+1);
+}};
+DHTMLpagenation.goto=function(iCurrentPage) { with (this)
+{
+ startime=new Date();
+ if(regularExp.test(iCurrentPage))
+ {
+  currentPage=iCurrentPage;
+  strDisplayContent=content.substr((currentPage-1)*perpageLength,perpageLength);
+ }
+ else
+ {
+  alert("page parameter error!");
+ }
+ DHTMLpagenation.displayPage();
+ DHTMLpagenation.displayContent();
+}};
+DHTMLpagenation.displayContent=function() { with (this)
+{
+ divDisplayContent.innerHTML=strDisplayContent;
+}};
+DHTMLpagenation.change=function(iPerpageLength) { with(this)
+{
+ if(regularExp.test(iPerpageLength))
+ {
+  DHTMLpagenation.perpageLength=iPerpageLength;
+  DHTMLpagenation.currentPage=1;
+  DHTMLpagenation.initialize();
+ }
+ else
+ {
+  alert("请输入数字");
+ }
+}};
+
+// method
+// DHTMLpagenation(strContent,perpageLength)
+
+DHTMLpagenation(s,100);
+
+//-->
+</SCRIPT>
+</BODY>
+</HTML>

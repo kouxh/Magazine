@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/grzx.css">
+		<link rel="stylesheet" href="/picss/pic.css">
+	</head>
+	<!--我的订单 -->
+	<body>
+		<script src="../picJs/PersonalCenter.js" type="text/javascript" charset="utf-8"></script>
+		<div class="grzx_main">
+			<script src="../picJs/PersonalCenter_side.js" type="text/javascript" charset="utf-8"></script>
+			<div class="grzx_mainList">
+				<div class="grzx_mainListD">
+					<!-- 我的订单My order-->
+					<div class="MyOrder">
+						<p class="TiTle">我的订单</p>
+						<b class="bj"></b>
+						<div class="MyOrder_tab">
+							<!-- 切换导航 -->
+							<div class="tab_title">
+								<ul>
+									<li class="default">所有订单</li>
+									<li>待付款</li>
+									<li>待发货</li>
+									<li>待收货</li>
+									<li>待评价</li>
+								</ul>
+								<div class="search" id="search">
+									<input type="text" placeholder="请输入内容">
+									<button type="button" class="button"></button>
+								</div>
+
+							</div>
+							<div class="tab_subject">
+								<div class="div Order">
+
+									<form action="">
+										<table border="none">
+											<tr class="">
+												<th>
+													<select>
+														<option value="">最近三个月订单</option>
+														<option value="">今年内订单</option>
+														<option value="">2018年的订单</option>
+														<option value="">2017年的订单</option>
+														<option value="">2017年前订单</option>
+													</select>
+													<span class="shangP">商品</span>
+												</th>
+												<th>数量</th>
+												<th>单价</th>
+												<th>收货人</th>
+												<th>合计</th>
+												<th><select>
+														<option value="">全部状态</option>
+														<option value="">待付款</option>
+														<option value="">待发货</option>
+														<option value="">待收货</option>
+														<option value="">待评价</option>
+													</select></th>
+												<th>操作</th>
+
+											</tr>
+											<tr>
+												<td>
+													<div class="orderTitle">
+														<p>订单号 :</p>
+														<p>1125836291941977</p>
+														<p>2019-07-12 16:17</p>
+													</div>
+													<div class="orderlist">
+														<dl>
+															<dt><img src="/img/06.png" alt=""></dt>
+															<dd>第一期 总第04期</dd>
+														</dl>
+													</div>
+
+												</td>
+												<td>
+													1
+
+												</td>
+
+												<td>
+													120
+
+												</td>
+												<td>
+													李海钰
+												</td>
+												<td>
+													<label>¥<span>12000</span></label>
+													<p>(含运费¥<span>10</span>)<br>在线支付</p>
+												</td>
+												<td>待支付</td>
+
+												<td>
+													<span class="span payment">立即支付</span>
+													<span class="span OrderDetails">订单详情</span>
+													<span class="span CancellationOrder">取消订单</span>
+													<span class="span Repurchase">再次购买</span>
+												</td>
+											</tr>
+											<tr>
+
+											</tr>
+										</table>
+									</form>
+								</div>
+								<div class="div">待付款</div>
+								<div class="div">待发货</div>
+								<div class="div">待收货</div>
+								<div class="div">待评价</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script src="/picJs/footer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script src="/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="../layui/css/layui.css">
+<script type="text/javascript">
+	$(".tab_title li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_subject>.div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("default").siblings().removeClass("default");
+	});
+	$(".tab_ment li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_box>.div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("change").siblings().removeClass("change");
+	});
+	layui.use('upload', function() {
+		var $ = layui.jquery,
+			upload = layui.upload;
+
+		//普通图片上传
+		var uploadInst = upload.render({
+			elem: '#test1',
+			url: '/upload/',
+			before: function(obj) {
+				//预读本地文件示例，不支持ie8
+				obj.preview(function(index, file, result) {
+					$('#demo1').attr('src', result); //图片链接（base64）
+				});
+			},
+			done: function(res) {
+				//如果上传失败
+				if (res.code > 0) {
+					return layer.msg('上传失败');
+				}
+				//上传成功
+			},
+			error: function() {
+				//演示失败状态，并实现重传
+				var demoText = $('#demoText');
+				demoText.html(
+					'<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+				demoText.find('.demo-reload').on('click', function() {
+					uploadInst.upload();
+				});
+			}
+		});
+	});
+</script>

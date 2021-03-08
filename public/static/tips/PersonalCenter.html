@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../picss/PersonalCenter.css">
+		<link rel="stylesheet" href="../picss/pic.css">
+		<link rel="stylesheet" href="../picss/footer_header.css">
+
+	</head>
+	<body>
+		<div class="PersonalCenter">
+			<div class="gmheader" id="gmheader">
+				<div class="gmheaderD_pcD" id="gmheaderD_pcD">
+					<div class="Gmheader_pcB" id="Gmheader_pcB">
+						<a href="" class="loge"><img src="../img/logo2.png" alt=""></a>
+					</div>
+					<div class="Gmheader_pcBR" id="Gmheader_pcBR">
+						<ul>
+							<li><a href="">购物车</a></li>
+							<li><a href="">我的订单</a></li>
+							<li><a href="">客户服务</a></li>
+						</ul>
+						<div class="Gmheader_pcBR">
+							<p class="Tc"><span class="Tc_user">你好：<span>xxx</span></span><label for="">|<span class="outlogin" id="outlogin">退出</span></label></p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="Vice-header">
+				<ul>
+					<li><a href="../cmas/yj.html" target="_blank">业界</a></li>
+					<li><a href="../cmas/gc.html" target="_blank">观察</a></li>
+					<li><a href="../cmas/ll.html" target="_blank">理论</a></li>
+					<li><a href="../cmas/al.html" target="_blank">案例</a></li>
+					<li><a href="../cmas/js.html" target="_blank">技术</a></li>
+					<li><a href="../cmas/zf.html" target="_blank">人物</a></li>
+					<li><a href="../cmas/activity.html" target="_blank">活动</a></li>
+					<li><a href="../cmas/zz.html" target="_blank">杂志</a></li>
+				</ul>
+			</div>
+			<!-- 标题搜索 -->
+			<div class="TitleSearch">
+				<div class="TitleSearch_left">
+					<img src="../img/01.png" alt="">
+				</div>
+				<div class="TitleSearch_center">
+					<div class="feature-head-bottom-right flex">
+						<div class="search-div-wrap">
+							<div class="search-div flex">
+								<input class="js-search-input" type="text" placeholder="请输入内容" value="">
+								<a class="search-link"><span class="icon search-top-icon"></span>搜索</a>
+							</div>
+							<div class="history-list">
+								<a href="" target="_blank">数字化转型</a>
+								<a href="" target="_blank">财务共享</a>
+								<a href="" target="_blank">管理会计</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="TitleSearch_right">
+					<label>购物车<span>0</span>件</label>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	// $(".coll_body").eq(4).show();
+	$(".Collapsing").click(function() {
+		// $(this).toggleClass("current").siblings('.Collapsing').removeClass("current"); //切换图标
+		$(this).next(".coll_body").slideToggle(500).siblings(".coll_body").slideUp(500);
+	});
+</script>

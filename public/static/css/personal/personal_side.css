@@ -1,0 +1,105 @@
+.PersonalCenter_side {
+    width: 250px;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.PersonalCenter_side .Side {
+    width: 204px;
+}
+.accountNav {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    line-height: 26px;
+    text-indent: 40px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+.accountNav .clearFix a{
+    font-weight:normal;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.personal_side_class a {
+    color: #d8293c !important;
+    font-size: 14px;
+   font-weight: 600;
+}
+.accountNav .Collapsing {
+    margin-top: 16px;
+    background:url(/static/img/x.png);
+    background-size: 8px 6px;
+    background-repeat: no-repeat;
+    background-position: 105px;
+}
+.accountNav .current {
+    background:url(/static/img/x.png);
+    background-size: 8px 6px;
+    background-repeat: no-repeat;
+    background-position: 105px;
+}
+.accountNav .clearFix {
+    text-indent: 65px;
+}
+
+/* 新刊推荐 */
+.Recommend_main {
+    width: 202px;
+    text-align: center;
+    height: 339px;
+    margin-top: 12px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(238, 238, 238, 1);
+
+}
+.Recommend_main a{
+    display: block;
+}
+.Recommend_main img {
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 19px;
+}
+.Recommend_main .book{
+    font-size:15px;
+    font-weight:bold;
+    color:rgba(43,51,65,1);
+    line-height:25px;
+    margin-top: 14px;
+
+}@media screen and (max-width: 1024px) {
+    .pagge{
+        width: 100%;
+    }
+    .grzx_main{
+        width: 92%;
+    }
+
+    .PersonalCenter_side{
+        width: 25%;
+        display: none;
+    }
+
+    .PersonalCenter_side .Side{
+        width: 100%;
+    }
+    .accountNav .clearFix,.accountNav{
+        text-indent: 0px;
+    }
+    .grzx_main .grzx_mainList{
+        width: 100%;
+        border-left:none;
+        margin-top: 20px;
+
+    }
+    /*.grzx_main .grzx_mainList .grzx_mainListD{*/
+    /*    display: none;*/
+    /*}*/
+    .grzx_main .grzx_mainList .grzx_mainListD{
+        margin-left: 0px;
+    }
+}

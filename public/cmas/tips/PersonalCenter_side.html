@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心—测导航</title>
+		<link rel="stylesheet" href="../picss/PersonalCenter.css">
+		<link rel="stylesheet" href="../picss/pic.css">
+		<link rel="stylesheet" href="../picss/footer_header.css">
+
+	</head>
+	<body>
+		<div class="PersonalCenter_side">
+			<!--测导航 -->
+			<div class="Side">
+				<p class="TiTle">首页 > 会员中心</p>
+				<div class="Side_main">
+					<b class="bj"></b>
+					<div class="accountNav">
+						<div title="订阅中心" class="Collapsing"><em></em>订阅中心</div>
+						<div class="coll_body">
+							<em></em>
+							<ul class="clearFix">
+								<li><a href="./cams/ll.html" title="个人中心" target="_blank">个人中心</a></li>
+								<li><a href="" title="我的购物车" target="_blank">我的购物车</a></li>
+								<li><a href="" title="我的订单" target="_blank">我的订单</a></li>
+								<li><a href="" title="我的积分" target="_blank">我的积分</a></li>
+								<li><a href="" title="资金管理" target="_blank">资金管理</a></li>
+								<li><a href="" title="我的收藏" target="_blank">我的收藏</a></li>
+							</ul>
+						</div>
+						<div title="我要投稿" class="Collapsing"><em></em>我要投稿</div>
+						<div class="coll_body">
+							<em></em>
+							<ul class="clearFix">
+								<li><a href="" title="提交稿件" target="_blank">提交稿件</a></li>
+								<li><a href="/myAccount/myCoupon" title="审核查询" target="_blank">审核查询</a></li>
+							</ul>
+						</div>
+						<div title="会员中心" class="Collapsing"><em></em>会员中心</div>
+						<div class="coll_body">
+							<em></em>
+							<ul class="clearFix">
+								<li><a href="" title="基本信息" target="_blank">基本信息</a></li>
+								<li><a href="/myAccount/myCoupon" title="修改密码" target="_blank">修改密码</a></li>
+								<li><a href="/campaign/changehistory/" title="收货地址" target="_blank">收货地址</a></li>
+								<li><a href="" title="发票信息" target="_blank">发票信息</a></li>
+								<li><a href="" title="我的红包" target="_blank">我的红包</a></li>
+								<li><a href="" title="我的留言" target="_blank">我的留言</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="Recommend">
+						<p class="TiTle">新刊推荐</p>
+						<b class="bj"></b>
+						<div class="Recommend_main">
+							<img src="../img/06.png" alt="">
+							<p class="book">《管理会计研究》  总第5期2019年 第2期</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	// $(".coll_body").eq(4).show();
+	$(".Collapsing").click(function() {
+		// $(this).toggleClass("current").siblings('.Collapsing').removeClass("current"); //切换图标
+		$(this).next(".coll_body").slideToggle(500).siblings(".coll_body").slideUp(500);
+	});
+</script>

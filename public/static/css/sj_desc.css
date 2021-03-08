@@ -1,0 +1,247 @@
+.wapper {
+    width: 100%;
+}
+
+.beij{
+    height: 80px;
+    background: #f3f3f3;
+    margin-bottom: 45px;
+}
+section {
+    width: 1154px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.main_left {
+    width: 780px;
+    float: left;
+}
+
+/*导航 */
+.Navigation a {
+    color: #888889;
+    font-size: 14px;
+    display: inline;
+    font-weight: 400;
+}
+
+.Navigation a span {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.Navigation a:nth-last-child(1) {
+    color: #141718;
+}
+
+.Navigation a:nth-last-child(1) span {
+    display: none;
+}
+
+.main_left dl {
+    width: 706px;
+    margin-top: 43px;    margin-bottom: 50px;
+}
+
+.main_left dl dt{
+    margin-right: 43px;	float: left;
+    width: 192px;
+}
+.main_left dl dt p:nth-child(1){
+    width: 192px;
+    height: 251px;	margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgba(234, 234, 234, 1);
+}
+.main_left dl dt p:nth-child(1) img{
+    width: 174px;
+    margin-top: 13px;
+    height: 225px;
+}
+.main_left dl dt p:nth-child(2){
+    text-align: center;
+    margin: 0 auto;
+    color: #888889;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.main_left dl dd {
+    float: right;
+    width: 465px;
+}
+
+.main_left dl dd .Title {
+    height: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgba(20, 23, 24, 1);
+    line-height: 35px;
+}
+
+.main_left dl dd .classification {
+    height: 13px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(216, 41, 60, 1);
+    line-height: 24px;
+    margin-top: 28px;
+    margin-bottom: 26px;
+
+}
+
+.main_left dl dd .book_introduction {
+    color: #2c3340;
+    font-size: 13px;
+    line-height: 24px;
+    height: 72px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+}
+.main_left dl dd .xt{
+    height: 1px ;
+    background:rgba(234, 234, 234, 1) ;margin-bottom: 20px;
+    margin-top: 18px;
+}
+.main_left dl dd .book_brief_introduction {
+    display: inline-block;
+    color: #888889;
+    font-weight: 400;
+    font-size: 14px;
+    width: 50%;
+    float: left;
+    margin-bottom: 16px;
+    height: 14px;
+}
+.main_left dl dd .book_brief_introduction:nth-last-child(3){
+    width: 100%;
+}
+.main_left dl dd .book_brief_introduction span {
+    color: #222222;
+}
+
+.section_H2 {
+    /* width: 100%; */
+    height: 43px;
+    background: rgba(243, 243, 243, 1);
+    box-shadow: 0px 3px 6px 0px rgba(6, 0, 1, 0.02);
+    background-image: url(../img/h2_01.png);
+    background-repeat: no-repeat;
+    background-size: 14px 43px;
+    padding-left: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(43, 51, 65, 1);
+    line-height: 43px;
+}
+
+.sj_Introduction {
+    width: 100%;
+    box-shadow: 0px 3px 7px 0px rgba(6, 0, 1, 0.14);
+}
+
+.sj_mian {
+    padding-top: 36px;
+    width: 91%;
+    margin: 0 auto;
+    padding-bottom: 26px;
+}
+
+.sj_mian p {
+    font-weight: 400;
+    color: rgba(43, 51, 65, 1);
+    line-height: 30px;
+    margin-bottom: 26px;
+    text-indent: 32px;
+    font-size: 16px;
+
+}
+
+.main_right {
+    width: 304px;
+    float: right;
+}
+
+.main_right .book_recommendation {
+    height: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(20, 23, 24, 1);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 38px;
+}
+
+.main_right .section_introduceL {}
+
+.main_right .section_introduceL .section_introduceL_main {
+    border: 1px solid rgba(234, 234, 234, 1);padding-top: 28px;
+}
+
+.main_right .section_introduceL a {}
+
+.main_right .section_introduceL dl {
+    width: 100%;
+}
+
+.section_introduceL dl dt {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.section_introduceL dl dt img {
+    width: 160px;
+    height: 208px;
+
+}
+
+.section_introduceL dl dd {
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    color: #2b3341;
+    font-size: 14px;
+    font-weight: 400;
+}
+@media screen and (max-width: 1024px) {
+    .main_left,.main_right{
+        width: 100%;
+        float: none;
+    }
+    .main_left dl{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main_left dl dt{
+        width: 100%;
+        margin-right: 0px;
+        float: none;
+    }
+    .main_left dl dd{
+        width: 100%;
+        float: none;
+    }
+    .main_left dl dd .Title{
+        margin-top: 20px;
+    }
+    .main_right .section_introduceL .section_introduceL_main{
+        border: none;
+    }
+    .main_right .section_introduceL a{
+        width: 46.4%;
+        margin-right: 5.7%;
+        float: left;
+    }
+    .main_right .section_introduceL a:nth-child(even){
+        margin-right: 0px;
+    }
+    .section_introduceL dl dd{
+        font-size: 12px;
+    }
+}

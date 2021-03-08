@@ -1,0 +1,236 @@
+/* 我的积分 */
+/* 积分明细 */
+.tab_subject{
+    margin-top: 12px;
+}
+#Detailed .DetailedMain_top-left {
+    width: 414px;
+    float: left;
+}
+
+#Detailed .DetailedMain_top-left .DetailedMain_top-left-top {
+    width: 100%;
+    height: 139px;
+    background: rgba(250, 250, 250, 1);
+    margin-bottom: 12px;
+
+}
+
+#Detailed .P_title {
+    color: #141718;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#Detailed .DetailedMain_top-left .P_title {
+    padding-top: 24px;
+    margin-bottom: 8px;
+}
+
+#Detailed .DetailedMain_top-left .paragraph {
+    margin-left: 20px;
+    width: 297px;
+}
+
+#Detailed .paragraph {
+    color: #888889;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+#Detailed .DetailedMain_top-left .DetailedMain_top-left-bottom {
+    width: 100%;
+    height: 100px;
+    background: rgba(250, 250, 250, 1);
+
+}
+
+#Detailed .DetailedMain_top-left .DetailedMain_top-left-bottom .P_title3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    padding-top: 20px;
+}
+
+#Detailed .DetailedMain_top-left .DetailedMain_top-left-bottom .Total {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #595959;
+    margin-top: 10px;
+
+
+}
+
+#Detailed .DetailedMain_top-left .DetailedMain_top-left-bottom .Total span {
+    color: #000000;
+    margin-right: 8px;
+
+}
+
+#Detailed .DetailedMain_top-right {
+    float: right;
+    width: 426px;
+    height: 252px;
+    background-color: rgba(250, 250, 250, 1);
+    box-shadow: 0px 2px 8px 0px rgba(35, 63, 113, 0.12);
+    background:url(/static/picImG/pc/grzx/01.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 128px;
+
+}
+
+#Detailed .DetailedMain_top-right .P_title2 {
+    margin-top: 60px;
+    margin-left: 75px;
+    height: 19px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 17px;
+}
+
+.DetailedMain_top-right .paragraph {
+    height: 13px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(136, 136, 137, 1);
+    margin-left: 75px;
+}
+
+.DetailedMain_top-right .ToSee {
+    width: 126px;
+    height: 43px;
+    background: rgba(243, 65, 77, 1);
+    border-radius: 22px;
+    display: block;
+    text-align: center;
+    line-height: 43px;
+    color: #fff;
+    margin-left: 75px;
+    margin-top: 30px;
+    border: none;
+}
+
+/* 明细表格 */
+#Detailed_table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#Detailed_table ul {
+    width: 100%;
+    height: 47px;
+    background: rgba(250, 250, 250, 1);
+    line-height: 47px;
+}
+
+#Detailed_table tr th {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    line-height: 42px;
+}
+#Detailed_table ul li{
+    display: block;
+    float: left
+;
+}
+#Detailed_table ul li:nth-child(1) {
+    padding-left: 49px;
+    display: inline-block;width: 430px;
+}
+#Detailed_table ul li:nth-child(2) {
+    width: 170px;
+}
+#Detailed_table ul li:nth-child(3) {
+    width: 200px;
+}
+
+#Detailed_table tr td:nth-child(1) {
+    width: 468px;
+}
+#Detailed_table tr td:nth-child(2) {
+    width: 100px;
+}
+#Detailed_table tr td:nth-child(3) {
+    width: 200px;
+}
+#Detailed_table tr dl {
+    margin-left: 49px;
+    width: 416px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 75px;
+}
+
+#Detailed_table tr dl dt {
+    width: 70px;
+    height: 75px;
+    float: left;
+    background: red;
+    margin-right: 9px;
+}
+
+#Detailed_table tr dl dt img {
+    width: 100%;
+    height: auto;
+}
+
+#Detailed_table tr dl dd {
+    float: left;
+    text-align: left;
+}
+
+#Detailed_table tr dl dd .P_title3 {
+    line-height: 24px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+#Detailed_table tr dl dd .paragraph {
+    height: 13px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(136, 136, 137, 1);
+    line-height: 25px;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+#Detailed .DetailedMain_top-left{width: 100%}
+    #Detailed .DetailedMain_top-right{
+        width: 100%;
+    }
+    #Detailed_table tr dl{
+        margin-left: 0px;
+        width: 100%;
+    }
+    #Detailed_table tr dl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Detailed_table tr dl dt{
+        /*display: none;*/
+    }
+    #Detailed_table tr td:nth-child(1){
+        width: 50%;
+    }
+    #Detailed_table ul li:nth-child(1){
+        width: 30%;
+    }
+    #Detailed_table ul li:nth-child(2){
+        width: 20%;
+    }
+    #Detailed_table ul li:nth-child(3){
+        width: 30%;
+        text-align: center;
+    }
+}

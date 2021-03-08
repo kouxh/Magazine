@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .tabulous_active{
+                border: 1px solid blue;
+            }
+        </style>
+        <script src="js/jquery.js"></script>
+    </head>
+    <body>
+    <div id="meeting_tabs">
+        <ul>
+              <li class="tabulous_active"><a href="#" title="">全部</a></li>
+              <li><a href="#" title="">未开始</a></li>
+              <li><a href="#" title="">已结束</a></li>
+               <li><a href="#" title="">进行中</a></li>
+        </ul>
+           <div id="tabs_container">
+            <div  class="pane">1</div>
+            <div  class="pane">2</div>
+            <div  class="pane">3</div>
+            <div  class="pane">4</div>
+          </div>
+    </div>
+    
+    <script>
+        $('#meeting_tabs>ul li').click(function(){
+            $(this).addClass('tabulous_active').siblings().removeClass('tabulous_active');
+            var num = $(this).index();
+            if(num == 0){
+                $('#tabs_container .pane').show();
+            }else{
+                $('#tabs_container .pane').eq(num).show().siblings().hide();
+            }
+         });
+    </script>
+    </body>
+</html>

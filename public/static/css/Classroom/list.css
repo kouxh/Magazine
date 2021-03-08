@@ -1,0 +1,127 @@
+#main {
+    width: 1036px;
+    margin: 0 auto;
+    padding-top: 46px;
+
+
+}
+
+#main .title {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 26px;
+    color: #141718;
+    font-weight: 500;
+}
+
+#main .title a {
+    float: right;
+    font-size: 16px;
+    line-height: 40px;
+    color: #888889;
+}
+#main .title a:hover
+{
+    color: #d8293c;
+}
+
+#main .center dl {
+    height: 407px;
+    width: 322px;
+    border: 1px solid #e0e0e0;
+    margin-top: 30px;
+    margin-right: 32px;
+    float: left;
+
+}
+
+#main .center dl:nth-child(3n+0) {
+    margin-right: 0px;
+}
+
+#main .center dl dt a {
+    width: 100%;
+
+}
+
+#main .center dl dt a img {
+    height: 170px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#main .center dl dt a p {
+    width: 256px;
+    margin: 0 auto;
+    margin-top: 14px;
+    font-size: 16px;
+    color: #222222;
+    border-bottom: 1px dashed #c7c7c7;
+    padding-bottom: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    height: 40px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#main .center dl dt a div {
+    width: 256px;
+    margin: 0 auto;
+    color: #868686;
+    font-size: 14px;
+}
+
+#main .center dl dt a div span:nth-child(1) {
+    margin-right: 14px;
+}
+
+#main .center dl dd {
+    width: 256px;
+    margin: 0 auto;
+}
+
+#main .center dl dd a {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    height: 44px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #2b3341;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+#main .center dl dd span {
+    margin-top: 18px;
+    display: block;
+    color: #888889;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1024px) {
+    #main {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    #main .title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #main .center dl {
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        margin-top: 30px;
+    }
+
+    #main .center dl:nth-child(3n+0) {
+        margin-right: auto;
+    }
+}

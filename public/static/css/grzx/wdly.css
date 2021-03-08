@@ -1,0 +1,106 @@
+.wdlyForm ul{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+
+}
+.wdlyForm ul li{
+    float: left;
+    color: #141718;
+    font-size: 12px;
+    font-weight: 500;
+}
+.wdlyForm tr:nth-child(1){
+    line-height: inherit;
+}
+.wdlyForm tr td{
+    padding-top: 20px;
+    height: 62px;
+    padding-bottom: 20px;
+}
+.wdlyForm tr td p{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.wdlyForm tr td,th:nth-child(1),.wdlyForm ul li:nth-child(1),.wdlyForm ul li:nth-child(3),.wdlyForm ul li:nth-child(4),.wdlyForm ul li:nth-child(5){
+    width: 160px;
+}
+.wdlyForm tr td,th:nth-child(2),.wdlyForm ul li:nth-child(2) {
+    width: 160px;
+}
+/*  */
+.wdlyForm tr td .delete ,.reply{
+    cursor:pointer;
+}
+/*我的留言回复功能*/
+.reply{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    #stay_word{
+        width: 100%;
+        /*background: red;*/
+    }
+    .wdlyForm ul{
+        display: none;
+    }
+   .wdlyForm ul li:nth-child(1), .wdlyForm ul li:nth-child(2),.wdlyForm ul li:nth-child(3), .wdlyForm ul li:nth-child(4){
+        width: 20%;
+    }
+    .wdlyForm tr{
+        width: 100% !important;
+    }
+    .wdlyForm tr td:nth-child(1){
+        width: 100%;
+        /*background: red;*/
+        height: 30px;
+        padding: 0px;
+        text-align: left;
+        display: block;
+    }
+    .wdlyForm tr td{
+        /*line-height: 30px;*/
+        height: auto;
+        padding: 0px;
+    }
+    .wdlyForm tr td p{
+        text-align: left;
+        width: auto;
+        height: auto;
+    }
+    .wdlyForm tr td:nth-child(2) {
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+        height: auto;
+    }
+    .wdlyForm tr td:nth-child(3){
+        display: block;
+        width: 100%;
+    }
+    .wdlyForm tr td:nth-child(4), .wdlyForm tr td:nth-child(5)
+
+    {
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+    }
+    /*.wdlyForm tr td:nth-child(4){*/
+    /*    margin-top: -178px;*/
+    /*    margin-right: -590px;*/
+    /*}*/
+    .delete,.wdlyForm tr td:nth-child(4){
+        display: none;
+    }
+
+
+
+
+}

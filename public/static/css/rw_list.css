@@ -1,0 +1,213 @@
+.Character_search {
+    height: 128px;
+    background: #f5f6f8;
+
+}
+
+.Character_search .Character_search_main {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.Character_search .auto-width {
+    float: left;
+    width: 546px;
+    margin-top: 40px;
+}
+
+.city-select {
+    margin-right: 30px;
+}
+
+.city-info {
+    background-position: 61px center !important;
+
+}
+.city-info .region {
+    width: 60px !important;
+}
+.select-down-div2 {
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-align: left;
+    width: 60px;
+    /* margin-top: 40px; */
+    Z-INDEX: 500;
+    POSITION: ABSOLUTE;
+    TOP: 40PX;
+    z-index: 500;
+}
+
+.select-down-div2 ul {
+    padding-top: 8px;
+}
+
+.select-down-div2 ul li {
+    line-height: 32px;
+    font-weight: 500;
+    color: #222222;
+    font-size: 15px;
+}
+
+.select-down-div2 ul li:hover {
+    color: #c83b42;
+}
+
+.select-down-div2 ul li.on {
+    color: #c83b42;
+    font-weight: 500;
+}
+
+.feature-head-bottom-right {
+    margin-left: 40px
+}
+
+.select-down-div2:hover {
+    display: block;
+}
+
+.feature-head-bottom-right .search-div input {
+    height: 38px !important;
+}
+
+.feature-head-bottom-right .search-div .search-link {
+    height: 38px !important;
+;
+}
+
+/* 人物列表 */
+section {
+    margin-top: 33px;
+}
+
+/* 人物名称 */
+.sectionLb .wznr dl dd h4 {
+    margin-bottom: 20px;
+}
+
+.sectionLb .wznr dl dd h4 .character {
+    color: #222222;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sectionLb .wznr dl dd h4 .post {
+    margin-left: 15px;
+    color: #888889;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sectionLb .wznr dl dd .research_field ._field-title {
+    width: 83px;
+    display: inline-block;
+    color: #888889;
+    font-size: 14px;
+}
+
+.sectionLb .wznr dl dd .Golden_sentence ._field-title {
+    float: left;
+}
+
+.sectionLb .wznr dl dd .research_field ._field {
+    background: #f5f6f8;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 6px;
+    line-height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #222222;
+}
+
+.sectionLb .wznr dl dd .research_field ._field:nth-last-child(1) {
+    margin-right: 0px;
+
+}
+
+.sectionLb .wznr dl dd .research_field .sentence {
+    display: inline-block;
+    width: 388px;
+    color: #222222;
+    font-weight: 400;
+    height: 48px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* 搜索人物名结果页 */
+.Character_introduction {}
+
+.Character_introduction strong {
+    line-height: 40px;
+    font-size: 14px;
+    color: #000;
+}
+
+.Character_introduction p {
+    line-height: 24px;
+    color: #222222;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.Character_introduction span {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(216, 41, 60, 1);
+    line-height: 24px;
+    display: inherit;
+}
+
+/* 人物列表 */
+@media screen and (max-width: 1024px) {
+
+    /* 搜索 */
+    .Character_search .Character_search_main {
+        width: 100%;
+    }
+
+    .feature-head-bottom-right {
+        width: 92%;
+        a margin: 0 auto;
+    }
+
+    .feature-head-bottom-right .search-div input {
+        width: 56%;
+    }
+
+    .feature-head-bottom-right {
+        margin-left: 0px;
+    }
+
+    .Character_search .auto-width {
+        width: 92%;
+        float: none;
+    }
+
+    /* 列表 */
+    .sectionLb .wznr dl dd h4 .post {
+        display: block;
+        margin-left: 0px;
+        margin-top: 4px;
+        font-size: 12px;
+    }
+
+    .sectionLb .wznr dl dd h4 {
+        margin-bottom: 0px;
+    }
+
+    .sectionLb .wznr dl dd p {
+        height: 24px;
+    }
+
+    .sectionLb .wznr dl dd .research_field .sentence {
+        width: 100%;
+    }
+}

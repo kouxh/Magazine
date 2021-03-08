@@ -1,0 +1,303 @@
+/* 文字标题 */
+.theory_p1 {
+	text-align: left;
+}
+
+section {
+	width: 1152px;
+	margin: 0 auto;
+	/* background: red; */
+	margin-top: 18px;    margin-bottom: 30px;
+}
+
+.sectionR_two:nth-child(1) {
+	: 26px;
+}
+
+.sectionR_two .sectionR_twoUL .ul li:nth-last-child(2) {
+	border-bottom: none;
+}
+
+.sectionR_two .ul {
+	padding-bottom: 26px !important;
+}
+
+.ckgd {
+	margin-top: 0px !important;
+	margin-right: 28px;
+}
+
+/* 布局  */
+.section_l {
+	width: 145px !important;
+	float: left;
+}
+
+.section_l h6 {
+	line-height: 55px;
+	font-size: 26px;
+	font-weight: bold;
+	color: rgba(20, 23, 24, 1);
+	text-align: center;
+	border-bottom: 1px dashed #969696;
+}
+
+.section_l dl {
+	border-bottom: 1px dashed #969696;
+	padding-bottom: 20px;
+	padding-left: 14px;
+	height: 32px;
+	padding-top: 10px;
+}
+
+.section_l dl dt {
+	float: left;
+	width: 58px;
+	height: 40px;
+}
+
+.section_l dl dt img {
+	width: 71px;
+	height: 71px;
+}
+
+.section_l dl dt span {
+	width: 100px;
+	height: 13px;
+	font-size: 13px;
+	font-weight: 500;
+	color: rgba(136, 136, 137, 1);
+	line-height: 19px;
+	margin-top: 6px;
+	display: block;
+}
+
+.section_l dl dd {
+	float: right;
+	width: 48px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	color: rgba(34, 34, 34, 1);
+}
+
+.section_l .sc {
+	width: 97px;
+	height: 30px;
+	border: 1px solid rgba(71, 161, 159, 1);
+	border-radius: 15px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(71, 161, 159, 1);
+	margin: 0 auto;
+	margin-top: 18px;
+}
+
+.sectionc {
+	float: left;
+	width: 563px;
+	margin: 0 auto;
+	text-align: center;
+	margin-left: 65px;
+	margin-bottom: 30px;
+}
+
+.sectionc p {
+	text-align: left;
+}
+
+.sectionc .theory_p1 .author {
+	border-bottom: 2px solid rgba(216, 41, 60, 1);
+	font-size: 13px;
+	font-weight: 500;
+	font-size: 13px;
+	margin-right: 18px;
+}
+
+.sectionc .theory_p {
+	font-size: 13px;
+	font-weight: 400;
+	color: #888889;
+	line-height: 19px;
+	margin-top: 12px;
+	background-image: url(../img/20.png);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	padding-left: 15px;
+
+	text-align: left;
+
+}
+
+.sectionc .theory_p span {
+	margin-left: 8px;
+	margin-right: 8x;
+}
+
+.sectionc h1 {
+	width: 100%;
+	/* height: 70px; */
+	font-size: 26px;
+	font-weight: bold;
+	color: rgba(20, 23, 24, 1);
+	line-height: 35px;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.sectionc .theory_p1 .Title {
+	font-size: 13px;
+	font-weight: 400;
+	color: #888889;
+	margin-right: 27px;
+}
+
+.sectionc .theory_p1 .time {
+	font-size: 13px;
+	font-weight: 400;
+	color: #888889;
+}
+
+.sectionc .Article {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(43, 51, 65, 1);
+	line-height: 30px;
+	margin-top: 20px;
+	text-align: left;
+	text-indent: 2em;
+	/* 	height: 1350px;
+	overflow: hidden;
+	overflow-y: initial; */
+}
+
+.sectionc .Article img {
+	width: 100%;
+	float: left;
+}
+
+.sectionc .chapter {
+	float: right;
+}
+
+/* 评论 */
+.sectionc .comment_bt {
+	text-align: center;
+	margin-top: 38px;
+}
+
+.sectionc .chapter a {
+	width: 107px;
+	height: 32px;
+	border: 1px solid rgba(242, 242, 242, 1);
+	border-radius: 5px;
+	display: inline-block;
+	line-height: 32px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(128, 128, 128, 1);
+}
+
+.sectionc .chapter a:hover {
+	color: #47A19F;
+	border: 1px solid rgba(71, 161, 159, 1);
+}
+
+
+/* 评论 */
+.comment dl {}
+
+.sectionR {
+	width: 310px;
+}
+
+/* 杂志 */
+.sectionR_one {
+	width: 100%;
+	/* height: 404px; */
+	float: right;
+	margin-top: 30px;
+
+}
+
+.gc_bottomRD {
+	width: 100%;
+	height: 404px;
+	background-image: url(../img/05.png);
+	background-size: 100% 100%;
+	background-position: center;
+	text-align: center;
+	: 30px;
+
+}
+
+.gc_bottomRD h3 {
+	font-family: PangMenZhengDao;
+	font-size: 23px;
+	font-weight: 400;
+	color: #3A3A3A;
+	padding-top: 30px;
+}
+
+.gc_bottomRD img {
+	width: 156px;
+	height: 202px;
+
+	margin-top: 19px;
+	: 18px;
+}
+
+.gc_bottomRD .D_Rbspan1 {
+	font-family: PangMenZhengDao;
+	font-size: 23px;
+	font-weight: 400;
+	color: rgba(216, 41, 60, 1);
+}
+
+/* .gc_bottomRD 杂志*/
+.gc_bottomRD .ckgd {
+	margin-right: 20px;
+}
+
+/* 专访左右样式 */
+/*  */
+.Home-section4 {
+	/* width: 92% !important; */
+}
+
+.prism-player .prism-cover {
+	background-color: none;
+	display: block;
+}
+
+.prism-player .prism-marker-text {
+	display: none;
+}
+
+.prism-player .prism-controlbar {
+	position: absolute;
+	left: -4px !important;
+	bottom: 9px !important;
+	right: 0px;
+	margin: 0 auto !important;
+}
+
+@media screen and (max-width: 1024px) {
+	.section_l {
+		width: 100% !important;
+	}
+
+	.section_l dl {
+		width: 20%;
+		display: inline-block;
+		float: left;
+	}
+
+	.section_l .sc {
+		float: left;
+	}
+}

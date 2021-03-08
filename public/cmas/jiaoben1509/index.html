@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>jQuery长文本分页特效 - 站长素材</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/textify.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/textify-min.js"></script>
+	</head>
+	<body>
+		<div class="longText2"></div>
+	</body>
+</html>
+<script type="text/javascript">
+	var ID = window.location.search.substr(4);
+	var zym = 'http://www.ynresearch.net';
+
+	function getCookie(name) {
+		var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+		if (arr = document.cookie.match(reg)) return unescape(arr[2]);
+		else return null;
+	}
+	var token = getCookie("token", token);
+	var url = 'http://www.ynresearch.net/articledesc?id=' + 63 + '&&token=' + token;
+	console.log(url)
+	$.ajax({
+		type: "GET",
+		url: url,
+		headers: {
+			'CLASS': 'technigue'
+		},
+		success: function(data) {
+			console.log(data)
+			var cc = data.data.like[0].id;
+			var html = '';
+			// html+=data.data.content.free_content;
+			html += '<div class="theory_p1"><span class="author">' + data.data.content.author +
+				'</span><a class="Title" href="./gc.html?">观察</a><span class="time">' + data.data.content.crea_at +
+				'</span></div><h1>' +
+				data.data.content.title +
+				'</h1><div class="Article" >' + data.data.content.free_content + '</div>';
+			$('.longText2 ').html(html);
+			// $('#ArtiCle_status .ArtiCle2 .bINput #label b').text(data.data.content.price);
+			// console.log(html)
+			var cc = $('.longText2 p').length;
+			$.each(cc.length, function(k, v) {})
+			console.log(v)
+			// $('.longText2 p').eq(cc[i]).append("分屏---------------------")
+			// $('.longText2').textify({
+			// 	numberOfColumn: 1,
+			// 	margin: 20,
+			// 	padding: 15,
+			// 	width: "auto",
+			// 	height: "auto",
+			// 	showNavigation: true,
+			// 	textAlign: 'justify'
+			// })
+			// 如果等于1为付费 文章
+		},
+		error: function(xhr, type, errorThrown) {
+
+		}
+	});
+</script>

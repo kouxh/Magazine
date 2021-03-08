@@ -1,0 +1,182 @@
+/* @charset "utf-8"; */
+/* 
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: "-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif";
+	font-weight: 400;
+	color: #fff;
+	line-height: 2em;
+} */
+
+body {
+	overflow-x: hidden;
+	background: #031c5c;
+}
+
+a {
+	text-decoration: none;
+	color: #1f6ecb;
+	cursor: pointer;
+}
+
+p {
+	font-size: 15px;
+}
+
+img {
+	max-width: 100% !important;
+	vertical-align: middle;
+}
+
+li {
+	list-style-type: none;
+}
+
+.clear {
+	clear: both;
+}
+
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 26px;
+	color: #373d41;
+}
+
+h3 {
+	font-size: 16px;
+	color: #2a2a2a;
+}
+
+.center {
+	text-align: center;
+}
+
+.wrapper {}
+
+.wrapper2 {}
+
+section {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.g {
+	padding-top: 67px;
+	padding-bottom: 60px;
+}
+
+.g h4,
+.g p {
+	margin-bottom: 55px;
+	color: #b0c1ff;
+	line-height: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.g h4,
+	.g p {
+		padding-left: 0px !important;
+	}
+
+	.wrapper {
+		width: 92%;
+		margin: 0 auto;
+	}
+
+	.about-bg {
+		height: 400px !important;
+	}
+}
+
+.pc-on {
+	display: initial;
+}
+
+.phone-close {
+	display: none;
+}
+
+.btn {
+	background: url(/picImG/zt/alpx/t3.png) no-repeat center/cover;
+	display: block;
+	width: 168px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	color: #fff;
+	margin: 47px auto;
+	text-align: center;
+}
+
+.c1 {
+	float: left;
+	margin-left: 9.1111%;
+}
+
+.banner1 {
+	height: 473px;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+}
+
+.about-bg {
+	background: url(/picImG/zt/alpx/banner.jpg) center center;
+	height: 450px;
+}
+
+.g>h2 {
+	color: #fff;
+	font-size: 21px;
+	background: #031c5c url(/picImG/zt/alpx/t1.png) no-repeat center/cover;
+	width: 226px;
+	height: 64px;
+	padding-top: 17px;
+	box-sizing: border-box;
+	margin: 0 auto -34px;
+	box-shadow: 0px 0px 50px 50px rgba(3, 28, 92, 1);
+	position: relative;
+	z-index: 5;
+}
+
+.nav {
+	margin: auto;
+}
+
+.nav a {
+	text-align: center;
+	width: 147px;
+	font-size: 19px;
+	color: #b0c1ff;
+	height: 62px;
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.nav a.selected {
+	color: #fff;
+	background: url(/picImG/zt/alpx/t6.png) bottom center/100% no-repeat;
+}
+
+.kuang {
+	border: #1e47b2 solid 2px;
+	border-radius: 10px;
+	padding: 90px 39px 0px;
+}
+
+@media screen and (max-width:800px) {
+	section {
+		width: auto !important
+	}
+
+	.wd-auto {
+		width: auto !important;
+	}
+
+}

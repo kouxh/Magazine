@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form id="registerForm" action="" method="post" name="myform">
+			<div id="nickNameId"></div>
+			<dl> <dt>用户名</dt>
+				<dd><input type="text" id="userName" class="inputs" /></dd>
+				<dd>
+				</dd>
+			</dl>
+			<dl> <dt>登录密码：</dt>
+				<dd><input type="password" id="pwd" class="inputs" /></dd>
+				<dd>
+					<div id="pwdId"></div>
+				</dd>
+			</dl>
+			<dl> <dt>重复登录密码：</dt>
+				<dd><input type="password" id="repwd" class="inputs" /></dd>
+				<dd>
+					<div id="repwdId"></div>
+				</dd>
+			</dl>
+			<dl> <dt>关联手机号：</dt>
+				<dd><input type="text" id="tel" class="inputs" /></dd>
+				<dd>
+					<div id="telId"></div>
+				</dd>
+			</dl>
+			<span class='subtotal'>获取验证吗</span>
+		</form>
+		</dl>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//失去焦点时，开始验证
+		// $("#nickName").blur(checkNick); //昵称
+		$("#userName").blur(checkUser); //用户名
+		$("#pwd").blur(checkPwd); //
+		$("#repwd").blur(checkRepwd); //确认密码
+		$("#tel").blur(checkTel); //手机号验证
+		$('.subtotal').click(function() {
+			var flag = true;
+			if (!checkUser()) flag = false; //用户名
+			if (!checkPwd()) flag = false; //密码
+			if (!checkRepwd()) flag = false; //确认密码
+			if (!checkTel()) flag = false;
+			else{
+				console.log("成功")
+			}
+			return flag;
+
+		})
+		//验证昵称
+		function checkNick() {
+			var nick = $("#nickName").val().trim();
+			var regnick = /^([\u4e000-\u9fa5]|\w|[@!#$%*])+$/;
+			var len = nick.replace("/[\u4e000-\u9fa5]/g", "xx").length; //计算字符串长度，一个汉字表示2个字符
+			if (regnick.test(nick) == false) {
+				$("#nickNameId").html("昵称由汉字、字母、数字、下划线，<br/>以及@、！、#、$、%\*等特殊字符组成，长度为4-20个字符");
+			} else if (len < 4 || len > 20) {
+				$("#nickNameId").html("昵称长度为4-20个字符");
+			} else {
+				$("#nickNameId").html("昵称输入正确");
+			}
+		}
+		//验证用户名
+		function checkUser() {
+			var user = $("#userName").val().trim();
+			var reguser = /^[a-zA-Z0-9](\w|.|-){2,16}[a-zA-Z0-9]$/;
+			if (reguser.test(user) == false) {
+				// $("#nickNameId").addClass("error_prompt").removeClass("ok_prompt");
+				$("#nickNameId").html("1、由字母、数字、下划线、点、减号组成<br/>2、只能以数字、字母开头或结尾，组长度为4-18");
+			} else {
+				// $("#nickNameId").addClass("ok_prompt").removeClass("error_prompt");
+				$("#nickNameId").html("用户名输入正确");
+			}
+		}
+		//验证密码
+		function checkPwd() {
+			var pwd = $("#pwd").val().trim();
+			var regpwd = /^[0-9a-zA-Z]{4,18}$/;
+			if (regpwd.test(pwd) == false) {
+				$("#pwdId").addClass("error_prompt").removeClass("ok_prompt");
+				$("#nickNameId").html("密码由英文字母和数字组成的4-18位字符");
+				return false;
+			} else {
+				$("#pwdId").addClass("ok_prompt").removeClass("error_prompt");
+				$("#nickNameId").html("密码输入正确");
+				return true;
+			}
+		}
+		//确认密码
+		function checkRepwd() {
+			var pwd = $("#pwd").val().trim();
+			var repwd = $("#repwd").val().trim();
+			if (pwd == "") {
+				$("#repwdId").html("");
+				return false;
+			}
+			if (repwd != pwd) {
+				$("#repwdId").addClass("error_prompt").removeClass("ok_prompt");
+				$("#nickNameId").html("两次密码输入不一致");
+				return false;
+			} else {
+				// $("#nickNameId").addClass("ok_prompt").removeClass("error_prompt");
+				return true;
+			}
+		}
+		// 验证手机号码
+		function checkTel() {
+			var tel = $("#tel").val().trim();
+			var regtel = /^(13|15|18)[0-9]{9}$/;
+			if (regtel.test(tel) == false) {
+				console.log("false")
+				$("#nickNameId").html("手机号只能是以13、15、18开头的11位数字");
+			} else {
+				$("#nickNameId").html("手机号输入正确");
+					return true;
+			}
+		}
+	})
+</script>

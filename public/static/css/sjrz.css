@@ -1,0 +1,158 @@
+/* 商家入住 */
+section {
+	width: 1158px;
+	margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table {
+	border: 0.3px solid #000;
+
+}
+
+table,
+tr,
+th,
+td {
+	border-bottom: 0.3px solid #000;
+
+}
+
+td,
+th {
+	border-right: 0.3px solid #000;
+
+}
+
+.tab ul {
+	border-bottom: 1px solid #e2e2e2;
+	;
+}
+
+.tab ul li {
+    line-height: 60px;
+    font-size: 28px;
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tab ul .change {
+	border-bottom: 2px solid #5598f3;
+}
+
+.tab-box {
+	margin-top: 20px;
+}
+
+.tab-box .p_one,
+.p_two,
+.p_three {
+	line-height: 36px;
+	color: #666;
+	font-weight: 300;
+}
+
+.tab-box .p_one input {
+	margin-right: 10px;
+}
+
+/* 入驻流程*/
+.tab-box .last {
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.tab-box .last input.Stationed {
+	background: rgba(216, 41, 60, 1);
+	width: 120px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0 auto;
+	border: none;
+}
+
+.tab-box .p_two {
+	font-weight: bold;
+}
+
+.tab-box .p_three {
+	text-indent: 22px;
+}
+
+.tab-box .p_four {
+	color: #0076FF;
+}
+
+.tab-box .div {
+	display: none;
+}
+
+.tab-box .div:nth-child(1) {
+	display: block;
+}
+
+.tab-box table {
+	width: 900px;
+	margin: 0 auto;
+	margin-bottom: 45px;
+}
+
+.tab-box table tr {
+	line-height: 38px;
+}
+
+.tab-box table tr:nth-last-child(1) td:nth-child(1) p {
+	border-bottom: 0.3px solid #000;
+}
+
+.tab-box table tr:nth-last-child(1) td:nth-child(1) p:nth-last-child(1) {
+	border-bottom: none;
+
+}
+
+.tab-box table tr td:nth-child(1) {
+	width: 300px;
+}
+
+.tab-box table tr p {
+	font-size: 14px;
+	padding-left: 10px;
+	color: #666;
+}
+
+.title {
+	line-height: 60px;
+
+	font-size: 28px;
+	display: inline-block;
+}
+
+.articleContent {
+	border-top: 1px solid #e2e2e2;
+	margin-top: -1px;
+	padding-top: 30px;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+.articleContent p {
+	line-height: 36px;
+	color: #666;
+	/* word-break: break-all; */
+}
+@media screen and (max-width: 1024px) {
+	.tab-box table{
+		width: 100%;
+	}
+	.tab-box table tr td:nth-child(1) {
+		width: 180px;
+	}
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- 提交稿件 -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/grzx.css">
+		<link rel="stylesheet" href="/picss/pic.css">
+	</head>
+	<style>
+	</style>
+	<!--提交稿件 -->
+	<body>
+		<script src="../picJs/PersonalCenter.js" type="text/javascript" charset="utf-8"></script>
+		<div class="grzx_main">
+			<script src="../picJs/PersonalCenter_side.js" type="text/javascript" charset="utf-8"></script>
+			<div class="grzx_mainList">
+				<div class="grzx_mainListD">
+					<p class="TiTle">提交稿件</p>
+					<b class="bj"></b>
+					<div class="tjgj_div1">
+						<p class="tjgj_div1_title">一、投稿内容：</p>
+						<p class="tjgj_div1_center">以管理会计为主，涉及预算管理、成本管理、财务共享、数据分析等领域。对高质量的热点议题来稿，将优先刊用。</p>
+						<p class="tjgj_div1_title">二、稿件要求：</p>
+						<p class="tjgj_div1_center">
+							(1)选题具有前瞻性、新颖性、重要性、实用性；(2)观点新颖独到，具有学术参考价值或实务指导意义；(3)论述充分有力，研究方法严 谨创新；(4)请务必标
+							明中图分类号和文献标识码，请标明英文标题；（5）请把稿件重合率控制在15%以下。
+						</p>
+						<p class="tjgj_div1_title">三、投稿方式：</p>
+						<p class="tjgj_div1_center">
+							请不要将同一文章重复向本刊投稿，可选择E-mail投稿及在线投稿（请投WORD文档格式）。
+						</p>
+						<p class="tjgj_div1_title">投稿邮箱：tg@chinamas.cn</p>
+					</div>
+					<div class="tjgj_div2">
+						<p class="TiTle TiTle2">在线投稿</p>
+						<form class="layui-form" action="">
+							<div class="layui-form-item">
+								<label class="layui-form-label">稿件标题</label>
+								<div class="layui-input-block">
+									<input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入稿件标题" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item" pane="">
+								<div class="layui-inline">
+									<label class="layui-form-label">投稿栏目</label>
+									<div class="layui-input-inline">
+										<select name="age" lay-verify="required" lay-search="">
+											<option value="">投稿栏目</option>
+											<option value="20-25">20-25</option>
+											<option value="25-35">25-35</option>
+											<option value="35-45">35-45</option>
+											<option value="45以上">45以上</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">作者</label>
+								<div class="layui-input-block">
+									<input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-inline">
+									<label class="layui-form-label">联系方式</label>
+									<div class="layui-input-inline">
+										<input type="tel" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-inline">
+									<label class="layui-form-label">邮箱</label>
+									<div class="layui-input-inline">
+										<input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">工作单位</label>
+								<div class="layui-input-block">
+									<input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入工作单位" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item" pane="">
+								<div class="layui-inline">
+									<label class="layui-form-label">职务</label>
+									<div class="layui-input-inline">
+										<select name="occupation" lay-verify="position" lay-search="">
+											<option value="">职位</option>
+											<option value="ceo">ceo</option>
+											<option value="cfo">cfo</option>
+											<option value="cto">cto</option>
+											<option value="职场新人">职场新人</option>
+											<option value="学生">学生</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="layui-form-item" pane="">
+								<div class="layui-inline">
+									<label class="layui-form-label">上传稿件</label>
+									<button type="button" class="layui-btn" id="test3"><i class="layui-icon"></i>上传文件</button>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+									<button class="layui-btn" lay-submit="" style="width: 416px; background: #f3414d;" lay-filter="demo1">提交</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script src="/picJs/footer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="../layui/css/layui.css">
+<script type="text/javascript">
+	function getCookie(name) {
+		var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+		if (arr = document.cookie.match(reg)) return unescape(arr[2]);
+		else return null;
+	}
+	var token = getCookie("token");
+	upload.render({
+		elem: '#test3',
+		url: '/upload/',
+		accept: 'file' //普通文件
+			,
+		done: function(res) {
+			console.log(res)
+		}
+	});
+	console.log(token);
+	layui.use(['form', 'layedit', 'laydate'], function() {
+		var form = layui.form,
+			layer = layui.layer,
+			layedit = layui.layedit,
+			laydate = layui.laydate;
+
+		//日期
+		laydate.render({
+			elem: '#birthday',
+			value: new Date()
+		});
+		laydate.render({
+			elem: '#date1'
+		});
+
+		//创建一个编辑器
+		var editIndex = layedit.build('LAY_demo_editor');
+
+		//自定义验证规则
+		form.verify({
+			title: function(value) {
+				if (value.length < 5) {
+					return '标题至少得5个字符啊';
+				}
+			},
+			pass: [
+				/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'
+			],
+			content: function(value) {
+				layedit.sync(editIndex);
+			}
+		});
+
+		//监听指定开关
+		form.on('switch(switchTest)', function(data) {
+			layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+				offset: '6px'
+			});
+			layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+		});
+
+		//监听提交
+		form.on('submit(demo1)', function(data) {
+			console.log(JSON.stringify(data.field))
+			var occupation = $('。')
+			// data.field.Consignee
+			// 			$.ajax({
+			// 				type: "POSt",
+			// 				url: "http://www.ynresearch.net/basicInfo",
+			// 				headers: {
+			// 					'token': token
+			// 				},
+			// 				data: JSON.stringify(data.field),
+			// 				success: function(data) {
+			// 					console.log(data);
+			// 					if (data.bol == true) {
+			// 						alert("完善成功")
+			// 					}
+			// 
+			// 				},
+			// 				error: function() {
+			// 					console.log("错误！！！")
+			// 
+			// 				}
+			// 			});
+			// layer.alert(JSON.stringify(data.field), {
+			// 	title: '最终的提交信息'
+			// })
+			return false;
+		});
+
+		//表单初始赋值
+		form.val('example', {
+			"username": "贤心", // "name": "value"
+			"password": "123456",
+			"interest": 1,
+			"like[write]": true, //复选框选中状态
+			"close": true, //开关状态
+			"sex": "女",
+			"desc": "我爱 layui"
+		})
+	});
+	$(".tab_title li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_subject>.div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("default").siblings().removeClass("default");
+	});
+	$(".tab_ment li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_box>.div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("change").siblings().removeClass("change");
+	});
+	layui.use('upload', function() {
+		var $ = layui.jquery,
+			upload = layui.upload;
+
+		//普通图片上传
+		var uploadInst = upload.render({
+			elem: '#test1',
+			url: '/upload/',
+			before: function(obj) {
+				//预读本地文件示例，不支持ie8
+				obj.preview(function(index, file, result) {
+					$('#demo1').attr('src', result); //图片链接（base64）
+				});
+			},
+			done: function(res) {
+				//如果上传失败
+				if (res.code > 0) {
+					return layer.msg('上传失败');
+				}
+				//上传成功
+			},
+			error: function() {
+				//演示失败状态，并实现重传
+				var demoText = $('#demoText');
+				demoText.html(
+					'<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+				demoText.find('.demo-reload').on('click', function() {
+					uploadInst.upload();
+				});
+			}
+		});
+	});
+</script>

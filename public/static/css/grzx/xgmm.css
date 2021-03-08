@@ -1,0 +1,97 @@
+.YZ {
+    height: 30px !important;
+    line-height: 30px;
+}
+
+.Change-Password {
+    text-align: center;
+    width: 392px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.Change-Password .register-top {
+    margin-bottom: 78px;
+    height: 14px;
+}
+
+.Change-Password .register-top span {
+    background-image: url(/static/picImG/forgotpwd/14.png);
+    background-repeat: no-repeat;
+    background-size: 6px 9px;
+    background-position: center right;
+    padding-right: 14px;
+    color: #888889;
+    font-size: 14px;
+    font-weight: 500;
+    width: 110px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 40px;
+    float: left;
+}
+
+.Change-Password .register-top span:nth-last-child(1) {
+    margin-right: 0px;
+    width: 45px;
+    background-image: none;
+}
+
+.register-con input {
+    width: 298px;
+    height: 28px;
+    text-indent: 20px;
+    outline: none;
+}
+.register-con input:focus {
+    background-color: #e9f0fd;
+    border: 1px solid #e9f0fd;
+}
+
+.register-con .aui-register-form-item .item_top .spanL {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    margin-right: 20px;
+    float: left;
+}
+
+/* 进度文字区别 */
+.jingdu {
+    color: #000 !important;
+}
+
+/* 提交按钮 */
+.btn {
+    border: none;
+    width: 300px;
+    height: 30px;
+    background: #999999;
+    color: #fff;
+    float: right;
+}
+#register-conCenter3{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+
+    .register-con input{
+        width: 65%;
+        border: 1px solid;
+        margin-right: 30px;
+
+    }
+    .register-con .aui-register-form-item .item_top .spanL {
+         margin-right: 0px;
+
+    }
+    .btn{
+        float: none;
+        margin-bottom: 40px;
+        margin-right: 46px;
+    }
+    .Change-Password .register-top span {
+        padding-right: 0px;
+    }
+}

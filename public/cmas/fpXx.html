@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="author" content="元年科技股份有限公司" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<!-- <link rel="stylesheet" href="css/cart.css"> -->
+		<link rel="stylesheet" href="css/fpXx.css">
+
+		<link rel="stylesheet" href="picss/footer_header.css">
+		<link rel="stylesheet" href="picss/xcConfirm.css">
+		<link rel="stylesheet" href="picss/pic.css">
+	</head>
+	<body>
+		<div id="cm_layer">
+			<div class="custom-layer">
+				<div class="FpXx">
+					<dl>
+						<dt class="bt">发票类型</dt>
+						<dd>
+							<ul class="Ul">
+								<li class="change">电子普通发票</li>
+								<li disabled="disabled">增值税专用发票</li>
+							</ul>
+							<div class="tab_box">
+								<div class="div">
+									<p>电子普通发票与纸质发票纸质普通发票具备同等法律效力,可支持报销入账</p>
+									<dl class="Td">
+										<dt class="bt">发票抬头</dt>
+										<dd>
+											<ul class="tait">
+												<li class="changes">个人</li>
+												<li disabled="disabled">公司</li>
+											</ul>
+											<div class="tab_box2">
+												<div class="div">
+													<p class="bt">收票人信息</p>
+													<div class="Fpinputx">
+														<p class="Fpinput_1 Fp_phone"><label for="">收票人手机</label><input type="text" value="18610164557"></p>
+														<div class="YZ"></div>
+													</div>
+													<div class="Fpinputx">
+														<p class="Fpinput_1"><label for="">收票人邮箱</label><input type="text" placeholder="用来接收电子发票邮件,可选填"></p>
+														<div class="YZ"></div>
+													</div>
+													<p class="bt">发票内容<span>发票内容选项已根据税法调整，具体请以展示为准</span></p>
+												</div>
+												<div class="div">
+													<div class="tab_box2">
+														<div class="div">
+															<div class="Fpinputx">
+																<p class="Fpinput_1 "><label for="">单位名称</label><input type="text" value="李海钰"></p>
+																<div class="YZ"></div>
+															</div>
+															<div class="Fpinputx">
+																<p class="Fpinput_1"><label for="">纳税人识别码</label><input type="text" placeholder="*请在此填写纳税人识别码"></p>
+																<div class="YZ"></div>
+															</div>
+															<p class="bt">收票人信息</p>
+															<div class="Fpinputx">
+																<p class="Fpinput_1 Fp_phone"><label for="">收票人手机</label><input type="text" value="18610164557"></p>
+																<div class="YZ"></div>
+															</div>
+															<div class="Fpinputx">
+																<p class="Fpinput_1"><label for="">收票人邮箱</label><input type="text" placeholder="用来接收电子发票邮件,可选填"></p>
+																<div class="YZ"></div>
+															</div>
+															<p class="bt">发票内容<span>发票内容选项已根据税法调整，具体请以展示为准</span></p>
+														</div>
+														<div class="div">lihay</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="div">lihay</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="json/xz.js"></script>
+<script type="text/javascript">
+	$(" .Ul li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		console.log(_index)
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_box>div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("change").siblings().removeClass("change");
+	});
+	$(".tait li").click(function(index) {
+		//通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+		var _index = $(this).index();
+		console.log(_index)
+		//让内容框的第 _index 个显示出来，其他的被隐藏
+		$(".tab_box2 .div").eq(_index).show().siblings().hide();
+		//改变选中时候的选项框的样式，移除其他几个选项的样式
+		$(this).addClass("changes").siblings().removeClass("changes");
+	});
+</script>

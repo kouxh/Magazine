@@ -1,0 +1,294 @@
+/* 注册页面  5-7 L*/
+#switcher {
+	background-image: url(../img/register.jpg);
+}
+
+. .aui-register-left {
+	float: right;
+	display: none;
+}
+
+.aui-register-popup {
+	float: left;
+	width: 529px;
+}
+
+.aui-register-box {
+	width: 529px;
+}
+
+/* 判断提示文字 */
+
+.YZ {
+	margin: 0 auto;
+	margin-left: 80px;
+}
+
+.register-wrap .register .register-top {
+	width: 420px;
+	margin-top: 30px;
+	border-bottom: none;
+}
+
+.register-wrap .register .register-top .neWuser {
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(43, 51, 65, 1);
+	line-height: 30px;
+	text-align: left;
+	width: 100%;
+
+}
+
+.register-wrap .register .register-top .neWuser span {
+	margin-right: 18px;
+}
+
+/* label 提示 */
+.register-wrap .register .register-top .neWuser label {
+	font-size: 14px;
+	color: #888889;
+
+}
+
+.register-wrap .register .register-top .neWuser label a {
+	color: #d8293c;
+	margin-left: 8px;
+	font-weight: 400;
+}
+
+.aui-register-form-item .sj {
+	border-right: none;
+	width: 206px;
+}
+
+.aui-register-form-item {
+	    width: 410px;
+	height: 56px;
+	margin: 0 auto;
+}
+
+.before1 {
+	margin-top: 20px;
+}
+.before .ok_prompt{
+	background-position: right 18px center !important;
+}
+.before  .error_prompt{
+	background-position: right 22px center !important;
+
+}
+.aui-register-form-item .item_top {
+	height: 36px;
+	line-height: 36px;
+}
+
+.aui-register-form-item .label {
+	width: 330px;
+	float: right;
+}
+
+.aui-register-form-item .label input {
+	width: 20px;
+
+}
+
+.aui-register-form-item .label input:checked {
+	width: 15px;
+	height: 14px;
+	background: red;
+	/* -webkit-appearance: none;
+	background-color: #f4a100;
+	position: absolute;
+	
+	/* top: 0; */
+	/* content: " ✓";
+	background-color: #ff0000;
+	color: #fff;
+	display: inline-block;
+	visibility: visible;
+	border-radius: 3px; */
+
+}
+
+.aui-register-form-item .itemB {
+	width: 330px;
+	height: 37px;
+	/* margin: 20px auto; */
+	float: left;
+
+}
+
+
+.aui-register-form-item .Verification {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	font-size: 14px;
+	transition: all 0.3s ease;
+	float: right;
+	width: 107px;
+	color: #68738a;
+	border: 1px solid rgba(124, 141, 176, 1);
+	height: 37px;
+	background: rgba(227, 231, 241, 1);
+
+}
+
+.aui-register-form-item_2 #label #btn1[type="checkbox"] {
+	width: 15px;
+	height: 14px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 18px;
+	position: relative;
+
+}
+
+#label #btn1[type="checkbox"]::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 14px;
+}
+
+#label #btn1[type="checkbox"]:checked::before {
+	content: "\2713";
+	background: rgba(43, 51, 65, 1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+.aui-register-form-item .spanL {
+	width: 80px;
+	display: inline-block;
+	float: left;
+}
+
+.aui-register-form-item input {
+	width: 330px;
+	padding-left: 1px;
+	float: left;
+}
+
+.aui-register-form-item_2 {
+	width: 389px;
+	float: right;
+}
+
+.aui-register-form-item_2 .aui-btn-reg {
+	width: 330px;
+	height: 46px;
+	line-height: 46px;
+	outline: 0;
+	border: 0;
+	background: #F3414D;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+	padding-left: 0;
+	font-weight: bold;
+	/* margin-bottom: 20px; */
+	display: block;
+}
+
+#label span {
+	font-size: 13px;
+	font-weight: 500;
+	color: rgba(136, 136, 137, 1);
+	margin-left: 2px;
+	line-height: 19px;
+
+}
+#label span a{
+	color:red;
+}
+
+.password_ {
+	background-image: none !important;
+	width: 14px;
+}
+/* 兴趣标签 */.Interest_center {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.Interest_center span {
+
+				font-weight: 400;
+				font-size: 14px;
+				color: #434954;
+				display: inline-block;
+			}
+
+			.Interest_ts {
+				color: #d8293c;
+				font-size: 14px;
+				font-weight: 400;
+			}
+
+			.Interest_center .item li {
+				display: inline-block;
+				*display: inline;
+				zoom: 1;
+				margin: 0 4px 4px 0;
+				vertical-align: top;
+				text-align: center;
+				font-size: 13px;
+				background: #fff;
+			}
+
+			.Interest_center .item li.on {
+				border-color: #afcb9f;
+				background: #d6e9c4;
+
+			}
+
+			.Interest_center .item li label {
+				padding-left: 16px;
+				padding-right: 16px;
+				border: 1px solid #c2cada;
+				height: 36px;
+				line-height: 36px;
+				display: block;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: -moz-none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			.Interest_center .item li label input {
+				position: absolute;
+				clip: rect(0 0 0 0);
+
+			}
+@media screen and (max-width: 1024px) {
+
+	.aui-register-form-item input,
+	.aui-register-form-item .itemB {
+		width: 77% !important;
+	}
+
+	.aui-register-form-item .itemB input {
+		width: 70% !important;
+	}
+
+	.aui-register-form-item .button {
+		width: 30% !important;
+	}
+}

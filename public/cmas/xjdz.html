@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="author" content="元年科技股份有限公司" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<link rel="stylesheet" href="css/xjdz.css">
+		<link rel="stylesheet" href="picss/footer_header.css">
+		<link rel="stylesheet" href="picss/xcConfirm.css">
+		<link rel="stylesheet" href="picss/pic.css">
+		<link rel="stylesheet" href="layui/css/layui.css">
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/province.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			var defaults = {
+				s1: 'provid',
+				s2: 'cityid',
+				s3: 'areaid',
+				v1: null,
+				v2: null,
+				v3: null
+			};
+		</script>
+	</head>
+	<style type="text/css">
+		.custom-layerb_R select {
+			width: 20% !important;
+		}
+
+		.layui-form-item .layui-input-inline {
+			width: 170px;
+			width: 25% !important;
+		}
+	</style>
+	<body>
+		<form class="layui-form layui-form-pane custom-layerD" action="">
+			<div class="layui-form-item custom-layerD_">
+				<label class="layui-form-label"><em>*</em>收货人</label>
+				<div class="layui-input-block custom-layerb_R">
+					<input type="text" name="Consignee" class="module-text select180 Consignee" required lay-verify="required"
+					 placeholder="请输入收货人信息" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="errorMessage"></div>
+			<div class="layui-form-item custom-layerD_">
+				<label class="layui-form-label"><em>*</em>选择地区</label>
+				<div class="custom-layerb_R">
+					<div class="layui-input-inline">
+						<select name="provid" id="provid" lay-filter="provid" class="xl">
+							<option value="">请选择省</option>
+						</select>
+					</div>
+					<div class="layui-input-inline">
+						<select name="cityid" id="cityid" lay-filter="cityid" class="xl">
+							<option value="">请选择市</option>
+						</select>
+					</div>
+					<div class="layui-input-inline">
+						<select name="areaid" id="areaid" lay-filter="areaid" class="xl">
+							<option value="">请选择县/区</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="errorMessage"></div>
+			<div class="layui-form-item custom-layerD_">
+				<label class="layui-form-label"><em>*</em>详细地址</label>
+				<div class="layui-input-block custom-layerb_R">
+					<input type="text" id="userName" name="desc_address" class="module-text select580 Consignee" required lay-verify="required"
+					 placeholder="请输入详细地址" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="errorMessage"></div>
+
+			<div class="layui-form-item custom-layerD_">
+				<label class="layui-form-label"><em>*</em>手机号</label>
+				<div class="layui-input-block custom-layerb_R">
+					<input type="text" name="tell" required lay-verify="required" class="module-text select180 Consignee" placeholder="请输入手机号"
+					 autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="errorMessage"></div>
+
+			<div class="layui-form-item custom-layerD_">
+				<label class="layui-form-label">固定号码</label>
+				<div class="layui-input-block custom-layerb_R">
+					<input type="text" name="fixed_number" required lay-verify="" class="module-text select180 Consignee" placeholder="请输入固定号码"
+					 autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="errorMessage"></div>
+			<div class="layui-form-item custom-layerD_">
+				<label class="layui-form-label">邮政编码 </label>
+				<div class="layui-input-block custom-layerb_R">
+					<input type="text" name="zip_code" required lay-verify="" class="module-text select180 Consignee" placeholder="请输入邮政编码"
+					 autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="errorMessage"></div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn" lay-submit lay-filter="formDemo">保存</button>
+					<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!-- <script type="text/javascript" src="json/xz.js"></script> -->
+<script type="text/javascript">
+	function getCookie(name) {
+		var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+		if (arr = document.cookie.match(reg)) return unescape(arr[2]);
+		else return null;
+	}
+	// setCookie("token",token);
+	var token = getCookie("token");
+	// 保存信息
+	layui.use('form', function() {
+		var form = layui.form;
+		//监听提交
+		form.on('submit(formDemo)', function(data) {
+			layer.msg(JSON.stringify(data.field));
+			console.log(JSON.stringify(data.field.areaid))
+			console.log(JSON.stringify(data.field))
+			console.log("保存");
+			$('.custom-layerb_R  .layui-select-title input').val
+			var Consignee = data.field.Consignee; //收货人
+			var cmbProvince = data.field.provid //地区  市
+			var cmbCity = data.field.cityid;
+			var cmbArea = data.field.areaid; //县
+			var detailed = data.field.desc_address; //详细地址
+			var phone = data.field.tell //手机号
+			var gdh = data.field.fixed_number; //固定电话
+			var yz = data.field.zip_code; //邮政编码
+			console.log(yz);
+			var address = Consignee + cmbProvince + cmbCity + cmbArea + detailed
+			console.log(Consignee + cmbProvince + cmbCity + cmbArea + detailed + phone + yz + gdh);
+			$("#address").text(address);
+			$.ajax({
+				type: "POST",
+				url: 'http://www.ynresearch.net/creaaddress',
+				beforeSend: function(request) {
+					request.setRequestHeader("TOKEN", token);
+				},
+				data: {
+					consignee: Consignee, //收货人
+					city: cmbProvince, //城市
+					area: cmbCity, //地区
+					county: cmbArea, //县
+					desc_address: detailed, //详细地址
+					fixed_number: gdh,
+					zip_code: yz, //邮政编码
+					tell: phone, //手机号
+				},
+				success: function(data) {
+					console.log(data);
+					// location.href = './order.html';
+				},
+				error: function() {
+					console.log("错我");
+				}
+			})
+
+
+
+
+			return false;
+		});
+	});
+
+	function alertMCLayer(layerStr, activeStr) {
+		let oLayer = $(layerStr);
+		// let layer_height = window.innerHeight + 'px';
+		// oLayer.css({
+		// 	'position': 'fixed',
+		// 	'left': '0',
+		// 	'top': '0',
+		// 	'width': '100%',
+		// 	'height': layer_height,
+		// 	'background': 'rgba(0,0,0,0.7)',
+		// 	'display': 'none',
+		// 	'justify-content': 'center',
+		// 	'align-items': 'center',
+		// });
+		oLayer.find('div').on('click', function(event) {
+			event.stopPropagation(); //取消事件冒泡，点击外层时才会弹出 
+		})
+		oLayer.on('click', function() {
+			$(this).css('display', 'none'); //点击外层隐藏蒙层  
+		})
+	}
+</script>

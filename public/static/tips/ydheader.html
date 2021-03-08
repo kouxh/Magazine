@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="/swiperCss/swiper.min.css">
+		<script type="text/javascript" src="/swiperJs/swiper.min.js"></script>
+		<link rel="stylesheet" href="/picss/footer_header.css">
+		<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+		<script src="/picJs/ydheader.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+
+			#TouchNav{width:100%;overflow:hidden;border-bottom:1px solid #f8f8f8;}
+        #TouchNav .swiper-slide{width:auto;letter-spacing:2px;text-align:center;  height: 74px; line-height: 74px;}
+        #TouchNav .swiper-slide a{
+        	padding-left: 20px;
+        	padding-right: 20px;
+        }
+            
+			
+        #TouchNav .swiper-slide a{transition:all .3s ease;display:block;}
+        #TouchNav .active a{transform:scale(1.1);color:#FF2D2D;}
+	* { margin: 0; padding: 0; }  
+	#topNav {
+		width: 100%; overflow: hidden; font: 16px/32px hiragino sans gb, microsoft yahei, simsun; border-bottom: 1px solid #f8f8f8; }
+		  #topNav .swiper-slide { padding-left: 11px;padding-right: 11px; 
+	letter-spacing: 2px; 
+	text-align: center; width: auto !important; }  
+	#topNav .swiper-slide span { 
+		transition: all .3s ease; display: block; }  
+		#topNav .active a { 
+			transform: scale(1.1); color: #FF2D2D; 
+		
+			
+			
+			}  img { width: 100%; line-height: 0; }
+			 	#topNav a{
+			 		color: #222222;
+			 	font-size: 1rem;
+			 	font-weight: 400;
+			 }
+			 </style>
+
+		</style>
+	</head>
+	<body>
+		<div class="yd_header">
+			<div class="yn_main">
+				<div class="yn_motop">
+					<div class="yn_motop_left">
+						<div class="yntop_menu_icon">
+							<div class="three col">
+								<div class="hamburger" id="hamburger-1">
+									<span class="line"></span>
+									<span class="line"></span>
+									<span class="line"></span>
+								</div>
+							</div>
+						</div>
+						&nbsp;&nbsp;
+						<div class="clear"></div>
+					</div>
+					<div class="yn_motop_center">
+						<a href="" class="motop_logo"><img src="/img/logo2.png"></a>
+					</div>
+					<div class="yn_motop_right">
+						<a href="" class="">人物</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<ul class="mo_dropmenu">
+					<li class="">
+						<div class="mo_dropmenu_title">
+							<a href="#">业界</a>
+						</div>
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">观察</a>
+						</div>
+
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">理论前沿</a>
+						</div>
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">案例研究</a>
+						</div>
+
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">新技术</a>
+						</div>
+					
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">人物</a>
+						</div>
+					
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">实践</a>
+						</div>
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">活动</a>
+						</div>
+					</li>
+					<li>
+						<div class="mo_dropmenu_title">
+							<a href="#">杂志</a>
+						</div>
+					</li>
+				</ul>
+				<!-- <div id="TouchNav" class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide active "><a href="/yj.html">业界</a></div>
+						<div class="swiper-slide"><a href="/gc.html">观察</a></div>
+						<div class="swiper-slide"><a href="/ll.html">理论前沿</a></div>
+						<div class="swiper-slide"><a href="/al.html">案例研究</a></div>
+						<div class="swiper-slide"><a href="/js.html">新技术</a></div>
+						<div class="swiper-slide"><a href="/zf.html">人物</a></div>
+						<div class="swiper-slide"><a href="/sj.html">实践</a></div>
+						<div class="swiper-slide"><a href="/hd.html">活动</a></div>
+						<div class="swiper-slide"><a href="/zz.html">杂志</a></div>
+
+					</div>
+				</div> -->
+				<div id="topNav" class="swiper-container">
+					<div class="swiper-wrapper">
+						<span class="swiper-slide active"><a href="/yj.html">业界</a></span>
+						<span class="swiper-slide"><a href="/gc.html">观察</a></span>
+						<span class="swiper-slide"><a href="/al.html">案例研究</a></span>
+						<span class="swiper-slide"><a href="/js.html">新技术</a></span>
+						<span class="swiper-slide"><a href="/zf.html">人物</a></span>
+						<span class="swiper-slide"><a href="/sj.html">实践</a></span>
+						<span class="swiper-slide"><a href="/hd.html">活动</a></span>
+						<span class="swiper-slide"><a href="/zz.html">杂志</a></span>
+						<!-- <span class="swiper-slide active"><span>推荐</span></span>
+						<span class="swiper-slide"><span>热点热点热点热点</span></span>
+						<span class="swiper-slide"><span>深圳</span></span>
+						<span class="swiper-slide"><span>视频</span></span>
+						<span class="swiper-slide"><span>社会</span></span>
+						<span class="swiper-slide"><span>娱乐</span></span>
+						<span class="swiper-slide"><span>科技</span></span>
+						<span class="swiper-slide"><span>问答</span></span>
+						<span class="swiper-slide"><span>汽车</span></span>
+						<span class="swiper-slide"><span>财经</span></span>
+						<span class="swiper-slide"><span>军事</span></span>
+						<span class="swiper-slide"><span>体育</span></span>
+						<span class="swiper-slide"><span>段子</span></span>
+						<span class="swiper-slide"><span>美女</span></span>
+						<span class="swiper-slide"><span>国际</span></span>
+						<span class="swiper-slide"><span>趣图</span></span>
+						<span class="swiper-slide"><span>健康</span></span>
+						<span class="swiper-slide"><span>特产</span></span>
+						<span class="swiper-slide"><span>房产</span></span> -->
+					</div>
+				</div>
+			</div>
+			<!-- <script src="js/common.js"></script>
+<script src="js/changespead.js"></script> -->
+			<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript">
+				// 				var TouchNav = new Swiper('#TouchNav', {
+				// 					freeMode: true,
+				// 					freeModeMomentumRatio: 0.5,
+				// 					slidesPerView: 'auto',
+				// 				});
+				// 				TouchNavWidth = TouchNav.container[0].clientWidth;
+				// 				TouchNavMaxTrans = TouchNav.maxTranslate();
+				// 				TouchNavMaxWidth = -TouchNavMaxTrans + TouchNavWidth / 2;
+				// 				$(".swiper-container").on('touchstart', function(e) {
+				// 					e.preventDefault();
+				// 				})
+				// 
+				// 				TouchNav.on('tap', function(swiper, e) {
+				// 					//e.preventDefault();
+				// 					slide = swiper.slides[swiper.clickedIndex];
+				// 					slideLeft = slide.offsetLeft;
+				// 					slideWidth = slide.clientWidth;
+				// 					slideCenter = slideLeft + slideWidth / 2;
+				// 					// 被点击slide的中心点
+				// 					TouchNav.setWrapperTransition(300);
+				// 					if (slideCenter < TouchNavWidth / 2) {
+				// 						TouchNav.setWrapperTranslate(0);
+				// 					} else if (slideCenter > TouchNavMaxWidth) {
+				// 						TouchNav.setWrapperTranslate(TouchNavMaxTrans);
+				// 					} else {
+				// 						nowTlanslate = slideCenter - TouchNavWidth / 2;
+				// 						TouchNav.setWrapperTranslate(-nowTlanslate);
+				// 					}
+				// 					$("#TouchNav .active").removeClass('active');
+				// 					$("#TouchNav .swiper-slide").eq(swiper.clickedIndex).addClass('active');
+				// 				})
+				// 				
+				var mySwiper = new Swiper('#topNav', {
+					freeMode: true,
+					freeModeMomentumRatio: 0.5,
+					slidesPerView: 'auto',
+					touchStartPreventDefault: false,
+					on: {
+						click: function(event) {
+							var swiperWidth = mySwiper.width,
+								maxTranslate = mySwiper.maxTranslate(),
+								maxWidth = -maxTranslate + swiperWidth / 2;
+							var slide = mySwiper.slides[mySwiper.clickedIndex],
+								slideLeft = slide.offsetLeft,
+								slideWidth = slide.clientWidth,
+								slideCenter = slideLeft + slideWidth / 2;
+							// 被点击slide的中心点
+							mySwiper.setTransition(300)
+							if (slideCenter < swiperWidth / 2) {
+								mySwiper.setTranslate(0)
+							} else if (slideCenter > maxWidth) {
+								mySwiper.setTranslate(maxTranslate)
+							} else {
+								nowTlanslate = slideCenter - swiperWidth / 2
+								mySwiper.setTranslate(-nowTlanslate)
+							}
+							$("#topNav  .active").removeClass('active')
+							$("#topNav .swiper-slide").eq(mySwiper.clickedIndex).addClass('active')
+						}
+					}
+				});
+			</script>
+	</body>
+</html>

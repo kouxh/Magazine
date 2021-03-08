@@ -1,0 +1,219 @@
+#Collection .Collection_main dl {
+    width: 226px;
+    height: auto;
+    float: left;
+    margin-top: 16px;
+    margin-right: 84px;
+}
+
+#Collection .Collection_main dl:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+#Collection .Collection_main dl dt {
+    width: 226px;
+    height: 283px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(250, 250, 250, 1);
+    box-shadow: 0px 1px 4px 0px rgba(35, 63, 113, 0.12);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#Collection .Collection_main dl dt img {
+    width: 186px;
+    height: 238px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+
+#Collection .Collection_main dl dt p.Invalid {
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    display: none;
+}
+
+#Collection .Collection_main dl dt p.delete {
+    position: absolute;
+    top: 0px;
+    width: 20px;
+    right: 0px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    opacity: 0.8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#Collection .Collection_main dl dt .Invalid {
+    background: rgba(148, 149, 148, 1);
+
+}
+
+#Collection .Collection_main dl dt .Already_purchased {
+    background: #f3414d;
+}
+
+#Collection .Collection_main dl dd p {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(43, 51, 65, 1);
+    text-align: center;
+    line-height: 25px;
+
+}
+
+#Collection .Collection_main dl dd p.money {
+    color: #FF0000;
+}
+
+/* 文章切换 */
+.Article a {
+    height: auto;
+    margin-bottom: 27px;
+}
+
+.Article dl {
+    width: 677px;
+    border-bottom: 1px dashed #969696;
+    height: auto;
+    padding-bottom: 27px;
+    height: 162px;
+    margin-top: 27px;
+    float: left;
+
+}
+
+.Article dl dd {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.Article dl dd h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 1);
+    line-height: 24px;
+    height: 48px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.Article dl dd p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(43, 51, 65, 1);
+    line-height: 24px;
+    height: 48px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: left;
+}
+
+.Article dl dd b {
+    display: block;
+    margin-top: 32px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(136, 136, 137, 1);
+    line-height: 19px;
+}
+
+.Article dl dd b .b-sL {
+    float: left;
+    background-image: url(/static/img/20.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+}
+
+.Article dl dd b .b-sR {
+    float: right;
+    margin-right: 8px;
+}
+
+.Article .A_right {
+    float: right;
+    margin-top: 27px;
+}
+
+.Article .A_right p {
+    width: 54px;
+    height: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(136, 136, 137, 1);
+    margin-bottom: 25px;cursor: pointer;
+
+}
+
+.information {
+    float: left;
+    width: 677px;
+    height: auto;
+}
+
+.information p {
+    text-align: right;
+    display: none;
+}
+
+.information p span {
+    margin-right: 24px;
+    height: 20px;
+
+
+}
+
+.information p span :nth-last-child(1) label {
+    margin-right: 0px;
+    background: url(/static/picImG/pc/grzx/04.png);
+    width: 60px;
+    background-size: 100% 100%;
+}
+
+.information p span img {
+    height: 20px;
+    margin-top: 14px;
+    margin-right: 12px;
+}
+
+.information p label {
+    color: #989899;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+
+}
+@media screen and (max-width: 1024px) {
+    .information{
+        width: 100%;
+    }
+    .Article dl{
+        width: 100%;
+    }
+    .Article .A_right p{
+        margin-bottom: 0px;
+    }
+/*    杂志收藏*/
+    #Collection .Collection_main dl{
+        margin: 0 auto;
+        float: none;
+        margin-top: 20px;
+    }
+    #Collection .Collection_main dl:nth-child(3n+3){
+        margin-right: auto;
+    }
+}

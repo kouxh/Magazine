@@ -1,0 +1,21 @@
+// 购买页面头部导航
+document.writeln("<div class=\'gmheader\' id=\'gmheader\'>");
+document.writeln("			<div class=\'gmheaderD_pcD\' id=\'gmheaderD_pcD\'>");
+document.writeln("				<div class=\'Gmheader_pcB\' id=\'Gmheader_pcB\'>");
+document.writeln("					<a href=\'/\' class=\'loge\'><img src=\'static/img/logo2.png\' alt=\'\'></a>");
+document.writeln("				</div>");
+document.writeln("				<div class=\'Gmheader_pcBR\' id=\'Gmheader_pcBR\'>");
+document.writeln("					<ul>");
+document.writeln("						<li><a href=\'\'>个人中心</a></li>");
+document.writeln("						<li><a href=\'\'>我的订单</a></li>");
+document.writeln("						<li><a href=\'\'>客户服务</a></li>");
+document.writeln("					</ul>");
+document.writeln("					<div class=\'Gmheader_pcBR\'>");
+document.writeln("						<p class=\'Tc\'><span class=\'Tc_user\'>你好：<span>xxx</span></span><label for=\'\'>|<span class=\'outlogin\' id=\'outlogin\'>退出</span></label></p>");
+document.writeln("					</div>");
+document.writeln("				</div>");
+document.writeln("				<div class=\'clear\'></div>");
+document.writeln("			</div>");
+document.writeln("		</div>");
+document.writeln("		<script type=\'text/javascript\' src=\'/static/js/jquery-1.11.1.min.js\'></script>");
+// document.writeln("		<script src=\'/static/picJs/tuichu.js\' type=\'text/javascript\' charset=\'utf-8\'></script>");

@@ -1,0 +1,624 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: "-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif";
+    font-weight: 400;
+    color: #5c5c5c;
+    line-height: 2em;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #1f6ecb;
+    cursor: pointer;
+}
+
+p {
+    font-size: 15px;
+}
+
+img {
+    max-width: 100% !important;
+    vertical-align: middle;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clear {
+    clear: both;
+}
+
+strong {
+    font-weight: bold;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #e8e8e8;
+}
+
+/*style="width:100%;"*/
+.hr-v {
+    border: none;
+    border-left: 1px solid #e8e8e8;
+    vertical-align: middle;
+}
+
+/*style="height:20px;"*/
+hr {
+    display: inline-block;
+}
+
+/*----------------上面是必备样式-------------------------------*/
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #373d41;
+}
+
+h3 {
+    font-size: 16px;
+    color: #2a2a2a;
+}
+
+.center {
+    text-align: center;
+}
+
+.wrapper {
+    background: #f5f6f9;
+}
+
+.wrapper2 {
+    background: #fff;
+}
+
+section {
+    width: 1124px;
+    margin: 0 auto;
+}
+.introduce{
+    width: 659px;
+    background: url(/static/picImG/ys/2.png) no-repeat center center;
+    height: 192px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    float: left;
+}
+.g {
+    padding-top: 50px;
+}
+
+.g > h2 {
+    margin-bottom: 34px;
+    font-weight: 500;
+}
+
+.g > h2 > img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.g > p {
+    margin-bottom: 9px !important;
+    font-size: 15px;
+    color: #141718;
+}
+
+.pc-on {
+    display: block;
+}
+
+.phone-on {
+    display: none;
+}
+
+
+.layui-layer-hui .layui-layer-content {
+    color: #fff !important;
+}
+
+.banner {
+    height: 324px;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background: url(/static/picImG/ys/banner.jpg) center center;
+    text-align: center;
+}
+
+.bg11 {
+    /*background: url(/static/picImG/ys/2.png) no-repeat center center;*/
+    width: 1124px;
+    /*height: 174px;*/
+    margin: 0 auto;
+    /*background-size: 100% 100%;*/
+
+}
+
+.ddd {
+    line-height: 36px;
+    width: 87%;
+    margin: 0 auto;
+    margin-top: -16px;
+}
+
+.section2_Recommend {
+}
+
+.section2_Recommend dl {
+    width: 545px;
+    height: 298px;
+    padding: 48px 36px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 27px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.section2_Recommend dl:last-of-type {
+    margin-right: 0;
+}
+
+.yn-ydgd {
+    height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(42, 42, 42, 1);
+    line-height: 22px;
+}
+
+.section2_Recommend dl dt {
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.section2_Recommend dl dt img {
+    width: 170px;
+    height: 221px;
+    transition: all 0.6s;
+}
+
+.section2_Recommend dl dd {
+    width: 276px;
+    float: left;
+    margin-left: 23px;
+}
+
+.section2_Recommend dl dd h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(42, 42, 42, 1);
+    line-height: 27px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.section2_Recommend dl dd p {
+
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(130, 138, 146, 1);
+    line-height: 22px;
+    /*
+            height: 40px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    */
+    margin-bottom: 20px;
+}
+
+.section2_Recommend dl dd .yn-bt {
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-block;
+    float: right;
+}
+
+.yn_h4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgba(20, 23, 24, 1);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.jjfa3 {
+}
+
+.jjfa3 li {
+    width: 543px;
+    height: 338px;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 29px 44px;
+    font-size: 16px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.jjfa3 li:nth-of-type(odd) {
+    margin-right: 30px;
+}
+
+.jjfa3 li img {
+    width: 113px;
+    margin-bottom: 11px;
+
+}
+
+.jjfa3 li p {
+    text-align: center;
+    font-size: 14px;
+    color: #141718;
+    height: 112px;
+}
+
+.jjfa3 li h3 {
+    font-size: 12px;
+    color: #999999;
+}
+
+.jjfa3 li h3 span {
+    font-size: 16px;
+    color: #141718;
+    margin-right: 8px;
+}
+
+.jjfa4 {
+}
+
+.jjfa4 li img {
+    width: 113px;
+    margin-bottom: 11px;
+
+}
+
+.jjfa4 li {
+    width: 354px;
+    height: 210px;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 24px 23px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-right: 20px;
+    border: 1px solid #f1f3eb;
+    overflow: hidden;
+
+}
+
+.jjfa4 li:last-of-type {
+    margin-right: 0;
+}
+
+.jjfa4 li h3 {
+    font-size: 14px;
+}
+
+.jjfa4 li h4 {
+    font-size: 12px;
+    margin: 15px auto 15px;
+    height: 41px;
+    background: url(/static/picImG/ys/sbg.jpg) no-repeat center;
+    line-height: 41px;
+}
+
+.jjfa4 li h3 span {
+    font-size: 24px;
+    color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.jjfa4 li p {
+    font-size: 12px;
+}
+
+.jjfa5 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.jjfa5 li {
+    width: 219px;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 24px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.jjfa5 li:last-of-type {
+    margin-right: 0;
+}
+
+.jjfa5 li img {
+    width: 215px;
+    height: 135px;
+    margin-bottom: 11px;
+
+}
+
+.jjfa5 li p {
+    font-size: 12px;
+    color: #999999;
+    height: 48px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.jjfa5 li h3 {
+    font-size: 14px;
+    color: #141718;
+    height: 60px;
+
+}
+
+.jjfa6 {
+}
+
+.jjfa6 li {
+    width: 353px;
+    height: 378px;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 27px;
+    margin-bottom: 30px;
+    padding: 26px;
+    font-size: 13px;
+    color: #141718;
+    background: #fff;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.jjfa6 li:last-of-type {
+    margin-right: 0px;
+}
+
+.jjfa6 li img {
+    width: 113px;
+    margin-bottom: 11px;
+
+}
+
+.jjfa6 li p {
+    text-align: left;
+    font-size: 12px;
+    color: #141718;
+}
+
+.jjfa6 li h3 {
+    font-size: 12px;
+    color: #999999;
+}
+
+.jjfa6 li h3 span {
+    font-size: 16px;
+    color: #141718;
+    margin-right: 8px;
+}
+
+.table1 {
+    width: 339px;
+    height: 167px;
+    border: 1px solid #ebebeb;
+    display: inline-block;
+    float: right;
+}
+
+.table1 h3 {
+    font-size: 16px;
+    color: #141718;
+    width: 286px;
+    margin: 13px auto 5px;
+}
+
+.table1 ul {
+    width: 286px;
+    font-size: 16px;
+    color: #141718;
+    margin: 0 auto;
+
+}
+
+.table1 ul li {
+    float: left;
+    margin-right: 10px;
+    width: 132px;
+}
+
+@media screen and (max-width: 800px) {
+    .phone-center {
+        text-align: center
+    }
+    .dd,.bg11{
+        width: 100%;
+    }
+    .introduce{
+        width: 100%;
+        height: auto;
+     background: none;
+        float: none;padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+    .banner{
+        height: 384px;
+        background: url(/static/picImG/ys/banner3.jpg) center center;
+    }
+    .g {
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+
+    .g > h2, .g > h3 {
+        padding: 0px 40px;
+        padding-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .g > p {
+        padding: 40px 40px;
+    }
+
+    section {
+        width: auto !important
+    }
+
+    .hr-v {
+        display: none;
+    }
+
+    .wd-auto {
+        width: auto !important;
+    }
+
+    .height-auto {
+        height: auto !important;
+    }
+
+    /*----------------手机必备样式-------------------------------*/
+    .tb-none {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .lr-none {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .pc-on {
+        display: none;
+    }
+
+    .phone-on {
+        display: block;
+    }
+
+    /*----------------end 手机必备样式-------------------------------*/
+    .ddd {
+        margin-top: 30px;
+        padding: 0px !important;
+    }
+
+    .bg11 {
+
+        background: none;
+        margin-top: 0px;
+    }
+
+    .jjfa3 li, .jjfa4 li {
+        width: 100%;
+    }
+
+    .section2_Recommend {
+
+        width: 92%;
+    }
+
+    .section2_Recommend dl {
+
+        width: 100%;
+    }
+
+    .section2_Recommend dl dd {
+        width: 63%;
+    }
+
+    .section2_Recommend dl {
+        width: 100%;
+
+        height: 100%;
+
+    }
+
+    .section2_viewpoint dl {
+        width: 100%;
+    }
+
+    .section2_Recommend dl dt {
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+
+    }
+
+    .section2_Recommend dl dt img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .section2_Recommend dl dd {
+        float: left;
+        width: 60%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .section2_Recommend dl dd h3 {
+        height: 29px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgba(42, 42, 42, 1);
+        line-height: 27px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-bottom: -3px;
+    }
+
+    .section2_Recommend dl dd p {
+        height: 93px;
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(130, 138, 146, 1);
+        line-height: 22px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+

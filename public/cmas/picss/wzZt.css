@@ -1,0 +1,107 @@
+/* 文章状态 */
+.ArtiCle_status {
+	width: 563px;
+	/* background: yellow; */
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 54px;
+}
+#ArtiCle_status {
+    text-align: center;
+    text-indent: 0 !important;
+}
+.ArtiCle_status .ArtiCle1,
+.ArtiCle_status .ArtiCle2,
+.ArtiCle_status .ArtiCle3 {
+	display: none;
+}
+
+.ArtiCle_status .ArtiCle1 {
+	margin: 0 auto;
+
+}
+
+/* 向下图片 */
+.ArtiCle_status .next {
+	background-repeat: no-repeat;
+	background-image: url(../img/next.png);
+	width: 27px;
+	height: 15px;
+	background-size: 100% 100%;
+	background-position: center center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+/* 文字 提示 */
+.ArtiCle_status .word {
+	color: #2b3341;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.ArtiCle_status .Button {
+	text-align: center;
+}
+
+/* 继续阅读 */
+.ArtiCle_status .Continue {
+	color: #ca7b49;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+
+/* 非会员 登陆和注册文字样式 */
+.ArtiCle_status .word span:nth-child(1) {
+	color: #4b5aa1;
+}
+
+.ArtiCle_status .word span:nth-child(2) {
+	color: #ca7b49;
+}
+/* 按钮 */
+.ArtiCle_status .Button .btn {
+	height: 50px;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+	width: 124px;
+	text-indent: 0;
+}
+/* 立即购买 */
+.ArtiCle_status .Button #purchase {
+	width: 124px;
+	background: rgba(243, 65, 77, 1);
+}
+.ArtiCle_status .Button #btn1 {
+	/* 登陆 */
+	background: #4b5aa1;
+	margin-right: 84px;
+}
+.ArtiCle_status .Button #btn2 {
+	/* 注册 */
+	background: #ca7b49;
+}
+
+/* 单选 */
+.ArtiCle .Radio {
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+}
+.ArtiCle_status .Radio .bINput {
+    /* width: 150px; */
+    /* float: left; */
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ArtiCle_status .Radio .bINput  label span{
+	margin-right: 30px;
+}

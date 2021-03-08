@@ -1,0 +1,71 @@
+.daka{}
+.daka li{
+	float:left;
+	position: relative;
+	z-index: 0px;
+}
+.daka li:after{
+            position:absolute;
+            left: 0;
+            top:0;
+            display: block;
+            width:0;
+            height:0;
+			content: '';
+            background-color: rgba(0, 0, 0, 0.5);
+            transition:all 0s ease;
+            transform: translateY(-100%);
+			z-index:1;
+        }
+.daka li:hover:after{
+			width:100%;
+			height:100%;
+            transform: translateY(0);
+			
+        }
+.daka li h3,.daka li p{
+	display: none;
+}
+.daka li:hover h3{
+	display: block;
+	position:absolute;
+	top: 34px;
+	z-index: 2;
+	color: #fff;
+	margin:auto;
+	font-size: 22px;
+	text-align: center;
+	font-weight: normal;
+	left: 0;
+	right: 0;
+}
+.daka li:hover p{
+	display: block;
+	position:absolute;
+	margin:auto;
+	top: 80px;
+	z-index: 2;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	left: 0;
+	right:0;
+	width: 160px;
+}
+.daka li img{
+	width:190px;
+	height: 190px;
+	vertical-align: top;
+}
+.wapper #demo {
+	overflow: hidden;
+	margin: auto;
+	
+	}
+@media screen and (min-width:1290px) {
+	.wapper #demo {
+	overflow: hidden;
+	margin: auto;
+	margin-top: 8px;
+	}
+}

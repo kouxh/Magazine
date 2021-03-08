@@ -1,0 +1,4 @@
+﻿User-agent: *
+Disallow: /loadLogin
+Disallow: /loadRegister
+Disallow: /sjrz

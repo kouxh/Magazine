@@ -1,0 +1,125 @@
+/* 会员充值 */
+.recharge_main {
+    margin-top: 52px;
+    height: 76px;
+}
+.default,.default2{
+    border: 1px solid red !important;
+}
+.recharge_main .recharge_mainLeft {
+    width: 93px;
+    float: left;
+}
+
+.recharge_main .recharge_mainLeft p {
+    height: 15px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    line-height: 76px;
+
+}
+
+.recharge_main .recharge_mainRight {
+    width: 694px;
+    float: left;
+}
+
+.recharge_main .recharge_mainRight dl {
+    width: 182px;
+    height: 74px;
+    background: rgba(250, 250, 250, 1);
+    box-shadow: 0px 2px 8px 0px rgba(35, 63, 113, 0.12);
+    float: left;
+    border:1px solid rgba(35, 63, 113, 0.12);
+
+}
+
+.recharge_main .recharge_mainRight dl dt {
+    width: 37px;
+    height: 38px;
+    float: left;
+    margin-left: 17px;
+    margin-top: 19px;
+    margin-right: 10px;
+}
+
+.recharge_main .recharge_mainRight dl dt img {
+    width: 100%;
+}
+
+.recharge_main .recharge_mainRight dl dd {
+    font-size: 16px;
+    line-height: 76px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.recharge_main .recharge_mainRight .xt {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: rgba(234, 234, 234, 1);
+    margin-left: 33px;
+    margin-right: 37px;
+    display: block;
+    float: left;
+    margin-top: 12px;
+}
+
+.recharge_main .recharge_mainRight  .xt:nth-last-child(1){
+    display: none;
+}
+#_main2{
+    height: 200px;
+}
+#_main2 dl {
+    margin-bottom: 40px;
+}
+
+#_main2 dl dt {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    line-height: 38px;
+
+}
+
+#_main2 dl dd {
+    float: none;
+    /* height: 38px; */
+    line-height: 24px;
+    text-align: center;
+    color: #D8293C;
+}
+@media screen and (max-width: 1024px) {
+    .recharge_main .recharge_mainRight{
+        width: 100%;
+    }
+    .recharge_main .recharge_mainLeft p{
+        height: 40px;
+        line-height: 40px;
+    }
+    .recharge_main .recharge_mainRight dl{
+ display: inline;
+        width: 48%;
+    }
+    .recharge_main .recharge_mainRight dl:nth-child(1), .recharge_main .recharge_mainRight dl:nth-child(5){
+
+        margin-right: 2%;
+    }
+    .recharge_main .recharge_mainRight .clear{
+        clear: none;
+    }
+    .recharge_main .recharge_mainRight .xt{
+        display: none;
+        float: left;
+        margin-right: 0px;
+        margin-left: 0px;
+
+    }
+}

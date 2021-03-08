@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+
+.sh{
+    display: none;
+}
+    .tab_ment ul li{
+        margin-right: 30px;
+    }
+
+}

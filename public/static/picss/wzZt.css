@@ -1,0 +1,377 @@
+/* 文章状态 */
+.ArtiCle_status {
+	width: 563px;
+	/* background: yellow; */
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 54px;
+}
+#ArtiCle_status {
+    text-align: center;
+    text-indent: 0 !important;
+}
+.ArtiCle_status .ArtiCle1,
+.ArtiCle_status .ArtiCle2,
+.ArtiCle_status .ArtiCle3 {
+	display: none;
+}
+
+.ArtiCle_status .ArtiCle1 {
+	margin: 0 auto;
+
+}
+
+/* 向下图片 */
+.ArtiCle_status .next {
+	background-repeat: no-repeat;
+	background-image: url(../img/next.png);
+	width: 27px;
+	height: 15px;
+	background-size: 100% 100%;
+	background-position: center center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+/* 文字 提示 */
+.ArtiCle_status .word {
+	color: #2b3341;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.ArtiCle_status .Button {
+	text-align: center;
+}
+
+/* 继续阅读 */
+.ArtiCle_status .Continue {
+	color: #ca7b49;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+
+/* 非会员 登陆和注册文字样式 */
+.ArtiCle_status .word span:nth-child(1) {
+	color: #4b5aa1;
+}
+
+.ArtiCle_status .word span:nth-child(2) {
+	color: #ca7b49;
+}
+/* 按钮 */
+.ArtiCle_status .Button .btn {
+	height: 50px;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+	width: 124px;
+	text-indent: 0;
+}
+/* 立即购买 */
+.ArtiCle_status .Button #purchase {
+	width: 124px;
+	background: rgba(243, 65, 77, 1);
+}
+.ArtiCle_status .Button #btn1 {
+	/* 登陆 */
+	background: #4b5aa1;
+	margin-right: 84px;
+}
+.ArtiCle_status .Button #btn2 {
+	/* 注册 */
+	background: #ca7b49;
+}
+
+/* 单选 */
+.ArtiCle .Radio {
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+}
+.ArtiCle_status .Radio .bINput {
+    /* width: 150px; */
+    /* float: left; */
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ArtiCle_status .Radio .bINput  label span{
+	margin-right: 30px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+/*文章分页点击放大效果*/
+
+
+.mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.5;
+	filter: Alpha(opacity=50);
+	z-index: 98;
+	transition: all 1s;
+	display: none;
+}
+
+.mask>img {
+	position: fixed;
+	right: 10%;
+	top: 20%;
+	width: 60px;
+	width: 40px;
+}
+.mappy img {
+	position: fixed !important;margin: auto;
+}
+
+.bigimg {
+	height: auto;
+	position: fixed;
+	left: 0;
+	top: 67px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+	z-index: 9999;
+	width: auto !important;
+}
+h2 {
+	text-align: center;
+}
+main iframe{
+	width: 100%;
+}
+main>p {
+	text-align: right;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+
+.page {
+	width: 100%;
+	line-height: 30px !important;
+}
+
+.page img {
+	width: 100%;
+}
+
+.page p {
+	margin: 0;
+	padding: 0;
+}
+
+.buttons {
+	margin-top: 40px;
+	text-align: center;
+}
+.buttons span{
+	width: 28px;
+	text-align: center;
+	padding: 0px !important;
+	display: inline-block;
+	margin: 0;
+	margin-left: 4px;
+	margin-left: 4px;
+
+}
+
+.buttons a.disable {
+	border: 1px solid #dfdfdf;
+	color: #bbb;
+}
+
+.buttons .next {
+	margin-left: 4px;
+}
+
+
+/* 评论 */
+.comments_mod_v1{
+	padding-top: 40px;
+}
+.form-part{
+	display: none;
+}
+.comments_mod_v1 .post-comment h2 {
+	font-size: 18px;
+	line-height: 18px;
+	padding-bottom: 20px;
+	border-bottom: 1px #e5e5e5 solid;
+	margin: 0;
+	margin-bottom: 50px;
+	color: #333333;
+}
+
+/* 评论留言 */
+.comment-info {
+	text-align: left;
+}
+
+/* 个人登录头像 */
+.comments_mod_v1 .comment-list .comment-item .comment-info .avatar {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 15px;
+
+}
+
+.comments_mod_v1 .comment-list .comment-item .comment-info .avatar img,
+.form-part .comment-form .user-info .avatar img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	vertical-align: middle;
+	max-width: 100%;
+	border: 0;
+	color: #00A4A0;
+}
+
+.comments_mod_v1 .comment-list .comment-item .comment-info .user {
+	line-height: 18px;
+	font-size: 16px;
+	color: #323232;
+	vertical-align: top;
+
+}
+
+.comments_mod_v1 .comment-list .comment-item .comment-info .user .name {
+	color: rgba(216, 41, 60, 1);
+	vertical-align: top;
+
+}
+.comments_mod_v1 .comment-list .comment-item .comment-cont,.comment-crea_at {
+
+	margin-left: 60px;
+	margin-bottom: 20px;
+	line-height: 24px;
+	font-size: 16px;
+	color:#333333;
+	text-align: left;
+
+}
+.comment-crea_at{
+	line-height: 14px;
+	font-size: 14px;
+	color: #666666;
+}
+	/* 没有登录提示 */
+.comments_mod_v1 .post-comment .login-tip {
+	margin-bottom: 30px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #808080;
+}
+
+.comments_mod_v1 .post-comment .login-tip a {
+	color: rgba(216, 41, 60, 1);
+
+}
+
+/* 登录之后可以评论 */
+.form-part .comment-form .user-info .avatar {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+
+}
+
+.comments_mod_v1 .post-comment .user-info {
+	font-size: 0;
+	margin-bottom: 36px;
+	text-align: left;
+}
+
+.comments_mod_v1 .post-comment .user-info h3.name {
+
+	line-height: 30px;
+	color: #000000;
+	font-size: 14px;
+	display: inline;
+
+}
+
+.comments_mod_v1 .post-comment .comment-form textarea {
+	padding-top: 13px;
+	text-indent: 15px;
+	font-size: 13px;
+	width: 100%;
+	height: 44px;
+	border: 1px solid #D8D8D8;
+	resize: none;
+	max-height: 158px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	line-height: 17px;
+	outline: none
+}
+textarea::-webkit-input-placeholder {
+	color: #B3B3B3;
+}
+.comments_mod_v1 .post-comment .comment-form textarea:focus{
+	height: 120px;
+}
+.comments_mod_v1 .post-comment .comment-form .bind-tip {
+	line-height: 37px;
+	font-size: 13px;
+	color: rgba(216, 41, 60, 1);
+	text-align: left;
+	float: left;
+}
+
+.comments_mod_v1 .post-comment .btn {
+	height: auto;
+	padding: 10px 20px;
+	line-height: 15px;
+	border: 1px solid rgba(216, 41, 60, 1);
+	border-radius: 2px;
+	color: rgba(216, 41, 60, 1);
+	float: right;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.bdshare-button-style0-32 a {
+	background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_32.png?v=7f3ed0f4.png) !important
+}
+/*手机端 */
+@media screen and (max-width: 1024px) {
+	.ArtiCle_status {
+		width: 100%;
+	}
+	/* 文章分页 */
+	.box{
+		height: auto;
+	}
+	.button{
+		width: 100%;
+		/*display: flex;*/
+		/*display: none; */
+		/*justify-content: space-between;*/
+		/*align-items: center;*/
+	}
+	.ArtiCle_status .Button .btn {
+		width: 100px;
+	}
+	.layui-layer .layui-layer-iframe{
+		height: auto !important;
+	}
+}

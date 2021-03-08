@@ -1,0 +1,45 @@
+
+.layui-form-label{
+    width: 84px !important;
+    text-align: right !important;
+}
+#test1{
+    height: 30px;
+    line-height: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.fplx {
+    margin-bottom: 32px;
+    margin-top: 32px;
+    color: #7a7a7a;
+    font-size: 12px;
+}
+
+.fplx span {
+    color: #d8293c
+
+}
+
+.tsxx {
+    color: #5c5c5c;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.tsxx span {
+    color: #d8293c;
+}
+@media screen and (max-width: 1024px) {
+#content .layui-form-item:nth-last-child(1){
+    text-align: center;
+}
+    #content .layui-form-item:nth-last-child(1) button{
+        width:84% !important;
+    }
+
+}

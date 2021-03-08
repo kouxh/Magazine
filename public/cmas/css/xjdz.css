@@ -1,0 +1,135 @@
+/*新建内容部分 */
+/* 更改layui */
+.layui-form-pane .layui-form-label {
+    width: 110px;
+    padding: 8px 15px;
+    height: 38px;
+    line-height: 20px;
+    border-width: 1px;
+    border-style: none !important;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    background-color:#fff !important;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.custom-layerD {
+	/* padding: 30px 50px; */
+	padding-top: 30px;
+	background: #fff;
+	margin: 0 a;
+}
+
+.custom-layerD .custom-layerD_ {
+	    height: 30px;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+.custom-layerD .custom-layerD_ em{
+	color: red;
+}
+.layui-layer-title{
+	background: #000 !important;
+}
+ body .demo-class  {
+	background: #fff !important;
+}
+/* */
+.MOr input {
+	width: 20px;
+	height: 20px;
+	
+}
+/* 提示文字 */
+.errorMessage {
+	padding-left: 120px;
+	height: 14px;
+	margin: 8px 0;
+	color: #e00;
+	line-height: 13px;
+	visibility: hidden;
+	background-repeat: no-repeat;
+	background-position-x: 100px;
+}
+
+.custom-layerD .custom-layerD_L {
+	float: left;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	color: #575757;
+	font-size: 14px;
+}
+
+.custom-layerD_L em {
+	color: #d1152a;
+}
+
+.custom-layerD .custom-layerb_R {
+	display: block;
+	margin-left: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.custom-layerD .custom-layerb_R .module-text {
+	border: 1px solid #ccc;
+	float: left;
+}
+.layui-form-select .layui-input{
+	height: 35px;    border: 1px solid #ccc;
+}
+input.module-text.select180 {
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 18px;
+}
+
+input.module-text.select580 {
+	width: 520px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 18px;
+}
+
+/* 下拉 */
+.custom-layerD .custom-layerb_R .sprite-module-select-icon {
+	background-position: 150px 12px;
+	background-repeat: no-repeat;
+}
+
+.custom-layerD .custom-layerb_R .module-select {
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 20px;
+	border-radius: 0;
+	position: relative;
+	color: #999;
+}
+
+select.module-select.select180 {
+	width: 160px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.default {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 100px;
+}
+
+/* 默认地址 */
+input.module-input,
+input.module_input {
+	/*  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	/* background-position: -28px 0;
+    background-repeat: no-repeat; */
+}

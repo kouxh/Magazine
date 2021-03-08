@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="author" content="元年科技股份有限公司" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<link rel="stylesheet" href="css/xjdz.css">
+		<link rel="stylesheet" href="picss/footer_header.css">
+		<link rel="stylesheet" href="picss/xcConfirm.css">
+		<link rel="stylesheet" href="picss/pic.css">
+		<link rel="stylesheet" href="layui/css/layui.css">
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form class="layui-form layui-form-pane custom-layerD" action="">
+			<div id="Xjdz" class="main_">
+				<div class="custom-layerD">
+					<div class="custom-layerD_">
+						<div class="custom-layerD_L"><em>*</em>收货人</div>
+						<div class="custom-layerb_R">
+							<input type="text" id="userName" class="module-text select180 Consignee" value="" style="">
+						</div>
+			
+					</div>
+					<div class="errorMessage YZ" id="userNameId"></div>
+					<div class="custom-layerD_">
+						<div class="custom-layerD_L"><em>*</em>所在地区</div>
+						<div class="custom-layerb_R">
+							<select class="form-control module-select select180 sprite-module-select-icon" id="cmbProvince" name="cmbProvince"></select>
+							<select class="form-control module-select select180 sprite-module-select-icon" id="cmbCity" name="cmbCity"></select>
+							<select class="form-control module-select select180 sprite-module-select-icon" id="cmbArea" name="cmbArea"></select></div>
+					</div>
+					<div class="errorMessage"></div>
+					<div class="custom-layerD_">
+						<div class="custom-layerD_L"><em>*</em>详细地址</div>
+						<div class="custom-layerb_R">
+							<input type="text" class="module-text select580" id="detailed" value="" style="">
+						</div>
+					</div>
+					<div class="errorMessage"></div>
+					<div class="custom-layerD_">
+						<div class="custom-layerD_L"><em>*</em>手机号</div>
+						<div class="custom-layerb_R">
+							<input type="text" class="module-text select180 " id="phone" value="" style="">
+						</div>
+					</div>
+					<div class="errorMessage"></div>
+					<div class="custom-layerD_">
+						<div class="custom-layerD_L">固定号码</div>
+						<div class="custom-layerb_R">
+							<input type="text" class="module-text select180" id="gdh" value="" style="">
+						</div>
+					</div>
+					<div class="errorMessage"></div>
+					<div class="custom-layerD_">
+						<div class="custom-layerD_L">邮政编码</div>
+						<div class="custom-layerb_R">
+							<input type="text" class="module-text select180" value="" id="yz" style="">
+						</div>
+					</div>
+					<div class="errorMessage"></div>
+					<div class="MOr" id='MOr'>
+						<input id="color-input-red" class="Xzhong" type="checkbox" " name=" color-input-red" value="#f0544d" autocomplete="off" />
+						<label for="color-input-red"></label>
+						<!-- <input id="color-input-red" class="Xzhong" type="checkbox" " name=" color-input-red" value="#f0544d"
+						 autocomplete="off" />
+						<label for="color-input-red"></label> -->
+						<!-- <span class="label" id="label">
+							<span type="checkbox " name="btn" id="btn1 ">设置为默认地址</span>
+						</span> -->
+					</div>
+				</div>
+			</div>
+		</form>
+		
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="json/xz.js"></script>
+<script type="text/javascript">
+	layui.use('form', function() {
+		var form = layui.form;
+		//监听提交
+		form.on('submit(formDemo)', function(data) {
+			layer.msg(JSON.stringify(data.field));
+			console.log(JSON.stringify(data.field))
+			return false;
+		});
+	});
+
+	function alertMCLayer(layerStr, activeStr) {
+		let oLayer = $(layerStr);
+		// let layer_height = window.innerHeight + 'px';
+		// oLayer.css({
+		// 	'position': 'fixed',
+		// 	'left': '0',
+		// 	'top': '0',
+		// 	'width': '100%',
+		// 	'height': layer_height,
+		// 	'background': 'rgba(0,0,0,0.7)',
+		// 	'display': 'none',
+		// 	'justify-content': 'center',
+		// 	'align-items': 'center',
+		// });
+		oLayer.find('div').on('click', function(event) {
+			event.stopPropagation(); //取消事件冒泡，点击外层时才会弹出 
+		})
+		oLayer.on('click', function() {
+			$(this).css('display', 'none'); //点击外层隐藏蒙层  
+		})
+	}
+</script>

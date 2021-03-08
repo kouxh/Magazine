@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="author" content="元年科技股份有限公司" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<link rel="stylesheet" href="css/forgotpwd.css">
+		<link rel="stylesheet" href="picss/pic.css">
+		<link rel="stylesheet" href="picss/footer_header.css">
+	</head>
+	<body id="by">
+		<script src="picJs/dzw.js" type="text/javascript" charset="utf-8"></script>
+		<div id="switcher">
+			<div class="center" id="center">
+				<div class="aui-register-popup">
+					<div class="aui-register-box">
+						<div class="aui-register-form" id="verifyCheck">
+							<div class="register-wrap" id="register-wrap">
+								<div class="register" id="register">
+									<div class="register-top" id="reg-top">
+										<dl class="jingdu">
+											<dt><img src="./picImG/forgotpwd/01.jpg" alt=""></dt>
+											<dd>1.账户验证</dd>
+										</dl>
+										<dl class="">
+											<dt><img src="./picImG/forgotpwd/02.jpg" alt=""></dt>
+											<dd>2.设置新密码</dd>
+										</dl>
+										<dl class="">
+											<dt><img src="./picImG/forgotpwd/03.jpg" alt=""></dt>
+											<dd>3.完成</dd>
+										</dl>
+									</div>
+									<!--账户密码登录-->
+									<div class="register-con" id="rc">
+										<div class="register-conCenter" id="register-conCenter1">
+											<div class="aui-register-form-item  before1 ">
+												<div class="item_top">
+													<span class="spanL">用户名</span>
+													<input type="text" id="userName" class="" placeholder="请输入用户名" autocomplete="off">
+												</div>
+												<div id="nickNameId" class="YZ"></div>
+											</div>
+
+											<div class="aui-register-form-item before">
+												<div class="item_top">
+													<span class="spanL">手机号</span>
+													<div class="itemB ">
+														<input type="text" id="tel" class="sj " placeholder="请输入正确的手机号" autocomplete="off">
+														<input class="verifyYz Verification  aui-get-code " id="J_getCode Verification" type="button" style="
+														text-align: center;width:137px;line-height: 37px;margin-top: 0px;top: 0;right: 0;padding: 0;"
+														 value="获取动态码" onclick="sendCode(this)" />
+													</div>
+												</div>
+												<div id="telId" class="YZ"></div>
+											</div>
+											<div class="aui-register-form-item">
+												<div class="item_top">
+													<span class="spanL">验证码</span>
+													<input type="text" id="code" class="code " placeholder="请输入验证码">
+												</div>
+												<div class="YZ" id="codeId"></div>
+											</div>
+											<div class="aui-register-form-item">
+												<button type="button" class="btn" id="btn1">下一步</button>
+											</div>
+										</div>
+										<div class="register-conCenter" id="register-conCenter2">
+											<div class="aui-register-form-item ">
+												<div class="item_top">
+													<span class="spanL">设置密码</span>
+													<input type="password" id="pwd" class="password" placeholder="请输入密码" autocomplete="off">
+												</div>
+												<div id="pwdId" class="YZ"></div>
+											</div>
+											<div class="aui-register-form-item ">
+												<div class="item_top">
+													<span class="spanL">确认密码</span>
+													<input type="password" id="repwd" class="passwords " placeholder="请确认密码" autocomplete="off">
+												</div>
+												<div id="repwdId" class="YZ"></div>
+											</div>
+											<div class="aui-register-form-item">
+												<button type="button" class="btn" id="btn2">下一步</button>
+											</div>
+										</div>
+										<div class="register-conCenter" id="register-conCenter3">
+											<dl>
+												<dt><img src="./picImG/forgotpwd/22.png" alt=""></dt>
+												<dd>
+													<p>新密码设置成功! 请牢记您新设置的密码。</p>
+													<a href="./index.html">返回首页</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.mins.js" type="text/javascript" charset="utf-8"></script> -->
+	</body>
+	<script src="picJs/footer.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="json/forgotpwd.js"> </script>
+	<script type="text/javascript" src="json/yzZc.js"></script>

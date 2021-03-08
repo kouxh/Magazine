@@ -1,0 +1,95 @@
+/* 我的购物车 */
+#checkAll input{
+    margin-right: 18px;
+    margin-left: 18px;
+}
+.Shopping_Cart {
+    width: 100%;
+    margin-top: 20px;
+}
+.table tr td {
+    text-align: center;
+}
+.table tr td dl {
+    /*margin-bottom: 36px;*/
+    margin-top: 38px;
+    padding-bottom: 34px;
+    height: 102px;
+    /* background: red; */
+}
+.table tr td dl dt {
+    width: 66px;
+    float: left;
+}
+
+.table tr td dl img {
+    width: 66px;
+    height: 90px;
+}
+
+.table tr td dl dd {
+    float: left;
+    width: 270px;
+    margin-left: 44px;
+    text-align: left;
+}
+
+.table tr td dl dd h3 {
+    color: #141718;
+    font-size: 14px;
+    font-family: ;
+    margin-bottom: 20px;
+}
+.operation{
+    cursor: pointer;
+}
+.Settlement_D {
+    height: 84px;
+    background: rgba(250, 250, 250, 1);
+    margin-top: 50px;
+}
+.Settlement_Dl {
+    float: left;
+    line-height: 84px;
+}
+.Settlement_Dl span {
+    margin-left: 28px;
+}
+.Settlement_DR {
+    float: right;
+    width: 509px !important;
+}
+.Settlement_DR .remember {
+    float: left;
+    width: 217px;
+    height: 28px;
+    text-align: right;
+    margin-right: 82px;
+}
+.Settlement_DR p:nth-child(1) {
+    margin-top: 20px;
+}
+.Settlement_DR p:nth-child(1) span {
+    color: #141718;
+    /*margin-right: 20px;*/
+}
+.Settlement_DR p:nth-child(1) i {
+    margin-left: 8px;
+    font-style: normal;
+    margin-right: 8px;
+}
+.Settlement_DR p:nth-child(2) span {
+    color: #d8293c;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.Settlement_DR .Settlement {
+    float: right;
+    height: 84px;
+    line-height: 84px;
+    width: 210px;
+    background: #f3414d;
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+}
